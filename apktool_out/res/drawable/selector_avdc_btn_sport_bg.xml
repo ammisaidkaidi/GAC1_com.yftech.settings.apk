@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/avdc_driving_mode_btn_sport_set" />
+    <item android:state_enabled="false" android:drawable="@mipmap/avdc_driving_mode_btn_sport_dis" />
+    <item android:drawable="@mipmap/avdc_driving_mode_btn_sport_nor" />
+</selector>

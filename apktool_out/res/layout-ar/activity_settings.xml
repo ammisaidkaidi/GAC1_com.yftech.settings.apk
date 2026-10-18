@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lll" android:background="@color/bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/statusBarHeight" android:layout_marginBottom="@dimen/bottomBarHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/menu" android:scrollbars="none" android:fadingEdge="horizontal" android:fadingEdgeLength="300.0dp" android:layout_width="1600.0dp" android:layout_height="wrap_content" android:overScrollMode="never" android:requiresFadingEdge="horizontal" android:paddingEnd="316.0dp" android:layout_marginStart="80.0dp">
+        <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@id/tab_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvConnect" android:text="@string/tab_title_connect" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvSound" android:text="@string/tab_title_sound" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvDrive" android:text="@string/tab_title_drive" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvChassisDynamic" android:visibility="gone" android:text="@string/tab_title_chassis_dynamic" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvParts" android:text="@string/tab_title_parts" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvAcSeat" android:text="@string/tab_title_ac_seat" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvDisplay" android:text="@string/tab_title_display" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvSystem" android:text="@string/tab_title_system" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tvVoice" android:visibility="gone" android:text="@string/tab_title_voice" style="@style/TabTextStyle" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View android:layout_marginStart="80.0dp" android:layout_marginEnd="180.0dp" style="@style/divider_horizontal" />
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60.0dp" android:layout_marginStart="80.0dp" />
+</LinearLayout>

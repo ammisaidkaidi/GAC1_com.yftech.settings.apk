@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="1240.0dp" android:maxHeight="602.0dp" android:minWidth="612.0dp" android:minHeight="254.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="460.0dp" android:minHeight="166.0dp" android:layout_marginStart="40.0dp" android:layout_marginEnd="40.0dp">
+            <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="30.0dp" android:lines="1" />
+            <RelativeLayout android:id="@id/layout_title_icon" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+                <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="left" android:id="@id/tv_title_icon" android:layout_width="match_parent" android:layout_height="46.0dp" android:lines="1" android:layout_toLeftOf="@id/iv_title_icon" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_title_icon" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+            </RelativeLayout>
+            <TextView android:textSize="28.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:layout_marginBottom="48.0dp" android:minHeight="84.0dp" android:lineSpacingExtra="4.0dp" />
+        </LinearLayout>
+        <View android:id="@id/divider_horizontal" android:layout_marginStart="@dimen/divider_height" android:layout_marginEnd="@dimen/divider_height" style="@style/divider_horizontal" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_btn" android:layout_width="match_parent" android:layout_height="82.0dp">
+            <Button android:textSize="28.0sp" android:textColor="@color/selector_dialog_button_guiding_text" android:gravity="center" android:id="@id/btn_sure" android:background="@drawable/selector_dialog_left_btn_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1.0" android:fontFamily="sourcehan-sans-medium" />
+            <View android:id="@id/divider_vertical" android:layout_marginBottom="@dimen/divider_height" style="@style/divider_vertical" />
+            <Button android:textSize="28.0sp" android:textColor="@color/selector_dialog_button_text" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/selector_dialog_right_btn_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/avdc_driving_mode_setting_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="950.0dp">
+        <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/avdc_driving_mode_setting_car_nor" android:scaleType="matrix" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="775.0dp" android:layout_height="wrap_content" android:layout_marginTop="137.0dp" android:layout_marginStart="80.0dp" style="@style/ScrollStyle">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_setting" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="110.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#c5c5c5" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="@string/avdc_item_current_driving_mode" android:layout_centerVertical="true" />
+                    <TextView android:textSize="40.0sp" android:textColor="#ffffff" android:gravity="bottom" android:id="@id/avdc_current_driving_mode" android:layout_width="wrap_content" android:layout_height="46.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="110.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#c5c5c5" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avdc_item_power_system" android:layout_centerVertical="true" />
+                    <TextView android:textSize="40.0sp" android:textColor="#ffffff" android:gravity="bottom" android:id="@id/avdc_power_system" android:layout_width="wrap_content" android:layout_height="46.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_steering_hand" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="34.0sp" android:textColor="#e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/avdc_item_steering_wheel" />
+                    <TextView android:textSize="24.0sp" android:textColor="#40ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/avdc_item_steering_steering_hand_describe" />
+                    <com.yftech.settings.widget.SwitchMultiButton android:id="@id/smb_steering_hand" android:layout_marginTop="24.0dp" android:layout_marginStart="170.0dp" style="@style/AvdcItemSwitchMultiButtonStyle" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layout_steering_wheel_sport_plus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="110.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#c5c5c5" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="@string/avdc_item_steering_wheel" android:layout_centerVertical="true" />
+                    <TextView android:textSize="40.0sp" android:textColor="#ffffff" android:gravity="bottom" android:id="@id/avdc_steering_hand_sport_plus" android:layout_width="wrap_content" android:layout_height="46.0dp" android:layout_marginTop="32.0dp" android:text="标准" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_esp_style_sport_plus" android:layout_width="wrap_content" android:layout_height="110.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#c5c5c5" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="@string/avdc_item_esp_style" android:layout_centerVertical="true" />
+                    <TextView android:textSize="40.0sp" android:textColor="#ffffff" android:gravity="bottom" android:id="@id/avdc_esp_style" android:layout_width="wrap_content" android:layout_height="46.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_sound_waves" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="34.0sp" android:textColor="#e6e6e6" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/avdc_item_sound_waves" />
+                    <com.yftech.settings.widget.Switcher android:id="@id/sw_sound_waves" android:background="@drawable/selector_avdc_switch_bg" android:layout_width="83.0dp" android:layout_height="38.0dp" android:layout_marginTop="32.0dp" android:thumb="@null" android:layout_alignParentEnd="true" />
+                    <TextView android:id="@id/tvDescribe" android:layout_width="726.0dp" android:layout_marginTop="4.0dp" android:text="@string/avdc_item_sound_waves_describe" android:layout_below="@id/tvTitle" android:layout_alignStart="@id/tvTitle" style="@style/ItemDescribeStyle" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_below="@id/tvDescribe" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_sound_waves_sport_plus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="110.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#c5c5c5" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="@string/avdc_item_sound_waves" android:layout_centerVertical="true" />
+                    <TextView android:textSize="40.0sp" android:textColor="#ffffff" android:gravity="bottom" android:id="@id/avdc_sound_waves_sport_plus" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="开启" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_ac_comfort_curve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#e6e6e6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avdc_item_ac_comfort_curve" />
+                    <com.yftech.settings.widget.SwitchMultiButton android:id="@id/smb_ac_comfort_curve" android:layout_marginTop="24.0dp" android:layout_marginStart="170.0dp" style="@style/AvdcItemSwitchMultiButtonStyle" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layout_ac_comfort_curve_sport_plus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="110.0dp">
+                    <TextView android:textSize="34.0sp" android:textColor="#c5c5c5" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="@string/avdc_item_ac_comfort_curve" android:layout_centerVertical="true" />
+                    <TextView android:textSize="40.0sp" android:textColor="#ffffff" android:gravity="bottom" android:id="@id/avdc_ac_comfort_curve_sport_plus" android:layout_width="wrap_content" android:layout_height="46.0dp" android:text="柔和" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:background="#26cedcff" android:layout_width="770.0dp" android:layout_height="2.0dp" android:layout_marginTop="32.0dp" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/layout_mode_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:layout_marginBottom="32.0dp" android:layout_below="@id/layout_setting">
+                <Button android:textSize="28.0sp" android:textColor="#b3ffffff" android:id="@id/btn_mode_reset" android:background="@drawable/selector_avdc_btn_reset_bg" android:visibility="gone" android:layout_width="240.0dp" android:layout_height="70.0dp" android:text="@string/avdc_button_text_reset" android:textAllCaps="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView android:id="@id/iv_ac_comfort_curve" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="345.0dp" android:layout_marginStart="1355.0dp" />
+</RelativeLayout>

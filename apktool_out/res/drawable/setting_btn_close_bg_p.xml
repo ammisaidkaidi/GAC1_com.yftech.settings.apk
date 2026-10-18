@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item Android:drawable="@mipmap/avdc_btn_close" />
+    <item Android:drawable="@drawable/shape_setting_btn_close_bg_p" />
+</layer-list>

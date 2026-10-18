@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llDisplayConsole" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/consoleBrightness" layout="@layout/item_seekbar" />
+    <include android:id="@id/consoleAcShowTime" layout="@layout/item_option" />
+    <include android:id="@id/consoleDesktopWallpaper" layout="@layout/item_desktop_wallpaper" />
+</LinearLayout>

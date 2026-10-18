@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_item" android:background="@drawable/selector_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/item_one_row_height">
+        <TextView android:textSize="@dimen/item_title_text_size" android:textColor="@color/title_text_color" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_name" android:layout_width="match_parent" android:layout_height="match_parent" android:lines="1" android:layout_marginEnd="22.0dp" android:layout_toStartOf="@id/btn_disconnect" />
+        <ImageView android:id="@id/iv_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/set_cp" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/tv_state" />
+        <TextView android:textSize="@dimen/item_button_text_size" android:textColor="@color/content_text_color" android:gravity="center" android:id="@id/tv_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/connected" android:layout_marginEnd="96.0dp" android:layout_alignParentEnd="true" />
+        <Button android:id="@id/btn_disconnect" android:visibility="gone" android:text="@string/disconnect" android:layout_centerVertical="true" android:layout_marginEnd="28.0dp" android:layout_toStartOf="@id/iv_icon" style="@style/ItemButtonStyle" />
+        <ImageView android:id="@id/iv_pack" android:layout_width="96.0dp" android:layout_height="match_parent" android:src="@mipmap/setting_icon_pack_down" android:scaleType="centerInside" android:layout_alignParentEnd="true" />
+        <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_details" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/item_one_row_height">
+        <TextView android:textSize="@dimen/sub_title_text_size" android:textColor="@color/bluetooth_item_text_color" android:id="@id/tv_ignore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ignore_device" android:layout_centerVertical="true" style="@style/ItemTitleStyle" />
+        <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+    </RelativeLayout>
+</LinearLayout>

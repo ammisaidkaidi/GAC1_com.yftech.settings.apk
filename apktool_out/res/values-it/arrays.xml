@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_auto_blowing_setting">
+        <item>"Flusso d'aria basso"</item>
+        <item>"Flusso d'aria medio"</item>
+        <item>"Flusso d'aria alto"</item>
+    </string-array>
+    <string-array name="active_safety_aid_lane_departure">
+        <item>Sterzata</item>
+        <item>Avviso</item>
+        <item>Avviso e Sterzata</item>
+    </string-array>
+    <string-array name="active_safety_aid_pre_collision_warning">
+        <item>Lontano</item>
+        <item>Medio</item>
+        <item>Vicino</item>
+    </string-array>
+    <string-array name="active_safety_aid_rear_through">
+        <item>Avviso</item>
+        <item>Avviso e Frenata</item>
+    </string-array>
+    <string-array name="avdc_ESP_style_a79">
+        <item>OFF</item>
+        <item>Sportivo</item>
+        <item>Gara</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve">
+        <item>Morbido</item>
+        <item>Standard</item>
+        <item>Veloce</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve_a79">
+        <item>Delicato</item>
+        <item>Normale</item>
+        <item>Veloce</item>
+    </string-array>
+    <string-array name="avdc_drive_system_mode">
+        <item>Comfort</item>
+        <item>Risparmio Energetico</item>
+        <item>Sportivo</item>
+        <item>Super Sportivo</item>
+    </string-array>
+    <string-array name="avdc_energy_recovery_level">
+        <item>Forte</item>
+        <item>Debole</item>
+        <item>Spento</item>
+    </string-array>
+    <string-array name="avdc_sound_waves">
+        <item>Spegnimento</item>
+        <item>Avvio</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a79">
+        <item>Leggero</item>
+        <item>Comfort</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="avdc_tcu_drive_mode">
+        <item>Comfort</item>
+        <item>Sportivo</item>
+        <item>Standard</item>
+        <item>Atla Temperatura</item>
+        <item>Standard</item>
+        <item>Atla Temperatura</item>
+        <item>Crociera</item>
+        <item>Risparmio Energetico</item>
+        <item>Super Sportivo</item>
+    </string-array>
+    <string-array name="car_lock_back_door">
+        <item>Chiuso</item>
+        <item>Apre ma non suona</item>
+        <item>Apre e suona</item>
+    </string-array>
+    <string-array name="car_lock_remote_unlocking">
+        <item>Tutti le porte</item>
+        <item>Solo la porta da guida</item>
+    </string-array>
+    <string-array name="car_lock_sliding_door_speed_setting">
+        <item>Elegante</item>
+        <item>Veloce</item>
+    </string-array>
+    <string-array name="console_ac_show_time">
+        <item>5 secondi</item>
+        <item>10 secondi</item>
+        <item>15 secondi</item>
+        <item>30 secondi</item>
+    </string-array>
+    <string-array name="dash_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>español</item>
+        <item>العربية</item>
+        <item>русский язык</item>
+    </string-array>
+    <string-array name="dash_volume">
+        <item>Basso</item>
+        <item>Medio</item>
+        <item>Alto</item>
+    </string-array>
+    <string-array name="driving_aid_cruise_assist_mode">
+        <item>Crociera auto-adattiva</item>
+        <item>Crociera integrata</item>
+    </string-array>
+    <string-array name="parts_steering_wheel_asterisk_1">
+        <item>Telefono Rapido</item>
+        <item>Panorama Rapido</item>
+        <item>Home Rapido</item>
+        <item>Radio Locale Preferito</item>
+        <item>SPORT+Rapido</item>
+        <item>Parcheggio Automatico Rapido</item>
+    </string-array>
+    <string-array name="sound_alarm_media">
+        <item>Invariato</item>
+        <item>Abbassato</item>
+        <item>Muto</item>
+    </string-array>
+    <string-array name="sound_best_effect_position">
+        <item>Modalità Completa</item>
+        <item>Modalità Pilota</item>
+        <item>Chiuso</item>
+    </string-array>
+    <string-array name="sound_by_volume_power">
+        <item>Invariato</item>
+        <item>Adattivo</item>
+    </string-array>
+    <string-array name="sound_effect_mode">
+        <item>Naturale</item>
+        <item>Voci brillanti</item>
+        <item>Subwoofer</item>
+        <item>Silenzioso</item>
+    </string-array>
+    <string-array name="sound_eq_effect_1">
+        <item>Classico</item>
+        <item>Pop</item>
+        <item>Jazz</item>
+    </string-array>
+    <string-array name="sound_eq_effect_2">
+        <item>Rock</item>
+        <item>Predefinito</item>
+        <item>Personalizzato</item>
+    </string-array>
+    <string-array name="sound_key_tone">
+        <item>Spegnimento</item>
+        <item>Moderno</item>
+        <item>Vintage</item>
+    </string-array>
+    <string-array name="system_info_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>العربية</item>
+        <item>Pусский язык</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_cs112">
+        <item>English</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_right">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Pусский язык</item>
+    </string-array>
+    <string-array name="system_voice_free_wake_up_duration">
+        <item>15 secondi</item>
+        <item>30 secondi</item>
+        <item>60 secondi</item>
+        <item>90 secondi</item>
+    </string-array>
+</resources>

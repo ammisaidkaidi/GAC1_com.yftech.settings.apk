@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/connect_layout" android:layout_width="857.0dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/bt_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/bt_tv_device_name" layout="@layout/item_text" />
+            <include android:id="@id/bt_sw_device" layout="@layout/item_bt_switch" />
+            <RelativeLayout android:id="@id/layout_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/item_one_row_height">
+                <TextView android:textSize="@dimen/item_title_text_size" android:textColor="@color/title_text_color" android:gravity="start|center" android:id="@id/bt_tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_tip_open_bluetooth" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/bt_tip_iv_scan_lodading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lodading" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bt_layout_opened" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@id/bt_sw_auto_connect" layout="@layout/item_switch" />
+                <include android:id="@id/bt_sw_auto_sync" layout="@layout/item_switch" />
+                <RelativeLayout android:id="@id/bt_layout_paired_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/item_one_row_height">
+                    <TextView android:textStyle="bold" android:id="@id/bt_tv_paired_header" android:text="@string/bluetooth_item_paired_list" android:layout_centerVertical="true" style="@style/ItemTitleStyle" />
+                    <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+                </RelativeLayout>
+                <com.yftech.settings.widget.ListViewForScrollView android:id="@id/bt_lv_paired" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" />
+                <RelativeLayout android:id="@id/bt_layout_connectable_header" android:layout_width="match_parent" android:layout_height="@dimen/item_one_row_height">
+                    <TextView android:textStyle="bold" android:id="@id/bt_tv_connectable_header" android:text="@string/bluetooth_item_connectable_list" android:layout_centerVertical="true" style="@style/ItemTitleStyle" />
+                    <ImageView android:id="@id/bt_iv_scan_lodading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lodading" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+                </RelativeLayout>
+                <com.yftech.settings.widget.ListViewForScrollView android:id="@id/bt_lv_connectable" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/selector_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/item_one_row_height">
+        <TextView android:ellipsize="end" android:id="@id/tvName" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="30.0dp" style="@style/ItemTitleStyle" />
+        <TextView android:id="@id/tvState" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" android:layout_toEndOf="@id/tvName" style="@style/ItemContentStyle" />
+    </RelativeLayout>
+</LinearLayout>

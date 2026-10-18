@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_auto_blowing_setting">
+        <item>Bajo</item>
+        <item>Medio</item>
+        <item>Alto</item>
+    </string-array>
+    <string-array name="active_safety_aid_lane_departure">
+        <item>Giro</item>
+        <item>Advertencias</item>
+        <item>Giro y advertencias</item>
+    </string-array>
+    <string-array name="active_safety_aid_pre_collision_warning">
+        <item>Lejos</item>
+        <item>Medio</item>
+        <item>Cerca</item>
+    </string-array>
+    <string-array name="active_safety_aid_rear_through">
+        <item>Advertencias</item>
+        <item>Advertencias y frenos</item>
+    </string-array>
+    <string-array name="active_safety_item_status_alert">
+        <item>Fatiga</item>
+        <item>Distracción</item>
+        <item>Recordatorio de fatiga y distracción</item>
+    </string-array>
+    <string-array name="avdc_ESP_style_a79">
+        <item>Apagado</item>
+        <item>Movimiento</item>
+        <item>Velocidad límite</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve">
+        <item>Suave</item>
+        <item>Estándar</item>
+        <item>Rápido</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve_a79">
+        <item>Suave</item>
+        <item>Normal</item>
+        <item>Rápido</item>
+    </string-array>
+    <string-array name="avdc_drive_system_mode">
+        <item>Cómodo</item>
+        <item>Ahorro de energía</item>
+        <item>Movimiento</item>
+        <item>Súper movimiento</item>
+    </string-array>
+    <string-array name="avdc_energy_recovery_level">
+        <item>Cerrar</item>
+        <item>Reciclaje primario</item>
+        <item>Reciclaje secundario</item>
+    </string-array>
+    <string-array name="avdc_shadow_driver">
+        <item>Cerrar</item>
+        <item>Sólido</item>
+        <item>Radical</item>
+        <item>Hielo y nieve</item>
+        <item>Autoadaptación</item>
+    </string-array>
+    <string-array name="avdc_sound_waves">
+        <item>Cerrar</item>
+        <item>Abrir</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a58">
+        <item>Cómodo</item>
+        <item>Estándar</item>
+        <item>Movimiento</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a79">
+        <item>Ligero</item>
+        <item>Cómodo</item>
+        <item>Movimiento</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a88">
+        <item>Ligero</item>
+        <item>Cómodo</item>
+        <item>Movimiento</item>
+    </string-array>
+    <string-array name="avdc_suspension_mode">
+        <item>Cómodo</item>
+        <item>Movimiento</item>
+    </string-array>
+    <string-array name="avdc_tcu_drive_mode">
+        <item>Cómodo</item>
+        <item>Movimiento</item>
+        <item>Estándar</item>
+        <item>Alta temperatura</item>
+        <item>Estándar</item>
+        <item>Alta temperatura</item>
+        <item>Crucero</item>
+        <item>Ahorro de energía</item>
+        <item>Súper movimiento</item>
+    </string-array>
+    <string-array name="car_lock_back_door">
+        <item>Cerrar</item>
+        <item>Abrir sin silbar</item>
+        <item>Abrir y silbar</item>
+    </string-array>
+    <string-array name="car_lock_remote_unlocking">
+        <item>Todas las puertas</item>
+        <item>Solo la puerta principal</item>
+    </string-array>
+    <string-array name="car_lock_sliding_door_speed_setting">
+        <item>Elegante</item>
+        <item>Rápido</item>
+    </string-array>
+    <string-array name="console_ac_show_time">
+        <item>5 segundos</item>
+        <item>10 segundos</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+    </string-array>
+    <string-array name="dash_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>español</item>
+        <item>العربية</item>
+        <item>русский язык</item>
+    </string-array>
+    <string-array name="dash_volume">
+        <item>Bajo</item>
+        <item>Medio</item>
+        <item>Alto</item>
+    </string-array>
+    <string-array name="driving_aid_cruise_assist_mode">
+        <item>Crucero de forma adaptativa</item>
+        <item>Crucero integrado</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_alarm_and_seat_vibration_and_alarm_and_seat_vibration">
+        <item>Voz de advertencia</item>
+        <item>Vibración del asiento</item>
+        <item>Voz de advertencia y vibración del asiento</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice">
+        <item>Efectos de sonido</item>
+        <item>Voz</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice_and_seat_vibration">
+        <item>Efectos de sonido</item>
+        <item>Voz</item>
+        <item>Vibración del asiento</item>
+    </string-array>
+    <string-array name="parts_steering_wheel_asterisk_1">
+        <item>Llamada con un solo clic</item>
+        <item>360 panorama con un solo clic</item>
+        <item>Entra en la interfaz principal con un solo clic</item>
+        <item>"Reproduce el radio local de la colección con 
+un solo clic"</item>
+        <item>Movimiento con un solo clic</item>
+        <item>Parking en un clic</item>
+    </string-array>
+    <string-array name="sound_alarm_media">
+        <item>Sin cambios</item>
+        <item>Bajar</item>
+        <item>Silencio</item>
+    </string-array>
+    <string-array name="sound_best_effect_position">
+        <item>Modo de pasajeros</item>
+        <item>Modo de conductor</item>
+        <item>Cerrar</item>
+    </string-array>
+    <string-array name="sound_by_volume_power">
+        <item>Sin cambios</item>
+        <item>Autoadaptación</item>
+    </string-array>
+    <string-array name="sound_effect_mode">
+        <item>Voz natural</item>
+        <item>Voz clara</item>
+        <item>Voz baja</item>
+        <item>Dormir</item>
+    </string-array>
+    <string-array name="sound_eq_effect_1">
+        <item>Clásico</item>
+        <item>Moda</item>
+        <item>Jazz</item>
+    </string-array>
+    <string-array name="sound_eq_effect_2">
+        <item>Rock</item>
+        <item>Predete</item>
+        <item>Personali</item>
+    </string-array>
+    <string-array name="sound_key_tone">
+        <item>Moderno</item>
+        <item>Antiguo</item>
+        <item>Cerrar</item>
+    </string-array>
+    <string-array name="system_info_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>العربية</item>
+        <item>Pусский язык</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_cs112">
+        <item>English</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_right">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Pусский язык</item>
+    </string-array>
+    <string-array name="system_voice_free_wake_up_duration">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>60 segundos</item>
+        <item>90 segundos</item>
+    </string-array>
+    <string-array name="system_voice_recognition_engine">
+        <item>Cantonés</item>
+        <item>Mandarín</item>
+    </string-array>
+    <string-array name="system_voice_speak_setting">
+        <item>Voz femenina tranquila</item>
+        <item>Voz chiquita</item>
+        <item>Voz joven</item>
+        <item>Voz masculina de negocios</item>
+    </string-array>
+</resources>

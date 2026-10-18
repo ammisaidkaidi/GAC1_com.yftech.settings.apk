@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_auto_blowing_setting">
+        <item>Rendah</item>
+        <item>Sedang</item>
+        <item>Tinggi</item>
+    </string-array>
+    <string-array name="active_safety_aid_lane_departure">
+        <item>Belok arah</item>
+        <item>Peringati</item>
+        <item>Belok arah dan peringati</item>
+    </string-array>
+    <string-array name="active_safety_aid_pre_collision_warning">
+        <item>Jauh</item>
+        <item>Sedang</item>
+        <item>Dekat</item>
+    </string-array>
+    <string-array name="active_safety_aid_rear_through">
+        <item>Peringati</item>
+        <item>Peringati dan rem</item>
+    </string-array>
+    <string-array name="active_safety_item_status_alert">
+        <item>Lelah</item>
+        <item>Tak fokus</item>
+        <item>Peringatan lelah dan tak fokus</item>
+    </string-array>
+    <string-array name="avdc_ESP_style_a79">
+        <item>OFF</item>
+        <item>Sport</item>
+        <item>Ekspres</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve">
+        <item>Lembut</item>
+        <item>Standar</item>
+        <item>Cepat</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve_a79">
+        <item>Lembut</item>
+        <item>Normal</item>
+        <item>Cepat</item>
+    </string-array>
+    <string-array name="avdc_drive_system_mode">
+        <item>Nyaman</item>
+        <item>Hemat energi</item>
+        <item>Sport</item>
+        <item>Super sport</item>
+    </string-array>
+    <string-array name="avdc_energy_recovery_level">
+        <item>Off</item>
+        <item>Pemulihan Lv. 1</item>
+        <item>Pemulihan Lv. 2</item>
+    </string-array>
+    <string-array name="avdc_shadow_driver">
+        <item>Off</item>
+        <item>Stabil</item>
+        <item>Radikal</item>
+        <item>Salju</item>
+        <item>Adaptif</item>
+    </string-array>
+    <string-array name="avdc_sound_waves">
+        <item>Off</item>
+        <item>Nyala</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a58">
+        <item>Nyaman</item>
+        <item>Standar</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a79">
+        <item>Nyaman</item>
+        <item>Ringan</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a88">
+        <item>Ringan</item>
+        <item>Nyaman</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="avdc_suspension_mode">
+        <item>Nyaman</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="avdc_tcu_drive_mode">
+        <item>Nyaman</item>
+        <item>Sport</item>
+        <item>Standar</item>
+        <item>Panas</item>
+        <item>Standar</item>
+        <item>Panas</item>
+        <item>Cruise</item>
+        <item>Hemat energi</item>
+        <item>Super sport</item>
+    </string-array>
+    <string-array name="car_lock_back_door">
+        <item>Tutup</item>
+        <item>Buka tanpa sirene</item>
+        <item>Buka dengan sirene</item>
+    </string-array>
+    <string-array name="car_lock_remote_unlocking">
+        <item>Semua pintu</item>
+        <item>Hanya pintu pengemudi</item>
+    </string-array>
+    <string-array name="car_lock_sliding_door_speed_setting">
+        <item>Elegan</item>
+        <item>Kilat</item>
+    </string-array>
+    <string-array name="console_ac_show_time">
+        <item>5 Detik</item>
+        <item>10 Detik</item>
+        <item>15 Detik</item>
+        <item>30 Detik</item>
+    </string-array>
+    <string-array name="dash_language_setting">
+        <item>Mandarin</item>
+        <item>Inggris</item>
+        <item>Spanyol</item>
+        <item>Arab</item>
+        <item>Persia</item>
+    </string-array>
+    <string-array name="dash_volume">
+        <item>L</item>
+        <item>M</item>
+        <item>H</item>
+    </string-array>
+    <string-array name="driving_aid_cruise_assist_mode">
+        <item>Atur auto kontrol Cruise</item>
+        <item>Integrasi kontrol Cruise</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_alarm_and_seat_vibration_and_alarm_and_seat_vibration">
+        <item>Suara peringatan</item>
+        <item>Kursi bergetar</item>
+        <item>Suara peringatan dan kursi bergetar</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice">
+        <item>Efek suara</item>
+        <item>Suara manusia</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice_and_seat_vibration">
+        <item>Efek suara</item>
+        <item>Suara manusia</item>
+        <item>Kursi bergetar</item>
+    </string-array>
+    <string-array name="parts_steering_wheel_asterisk_1">
+        <item>1 Tombol telepon</item>
+        <item>1 Tombol 360 panorama</item>
+        <item>1 Tombol ke halaman utama</item>
+        <item>1 Tombol mainkan radio lokal favorit</item>
+        <item>1 Tombol SPORT+</item>
+        <item>1 tombol Untuk parkir</item>
+    </string-array>
+    <string-array name="sound_alarm_media">
+        <item>Tetap</item>
+        <item>Kurangi</item>
+        <item>Diam</item>
+    </string-array>
+    <string-array name="sound_best_effect_position">
+        <item>Mode semua pengendara</item>
+        <item>Mode pengemudi</item>
+        <item>Matikan</item>
+    </string-array>
+    <string-array name="sound_by_volume_power">
+        <item>Tetap</item>
+        <item>Auto-adjust</item>
+    </string-array>
+    <string-array name="sound_effect_mode">
+        <item>Suara alami</item>
+        <item>Vokal jernih</item>
+        <item>Bass</item>
+        <item>Relax</item>
+    </string-array>
+    <string-array name="sound_eq_effect_1">
+        <item>Klasik</item>
+        <item>Pop</item>
+        <item>Jazz</item>
+    </string-array>
+    <string-array name="sound_eq_effect_2">
+        <item>Rock</item>
+        <item>Default</item>
+        <item>Kustom</item>
+    </string-array>
+    <string-array name="sound_key_tone">
+        <item>Modern</item>
+        <item>Kuno</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="system_info_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>العربية</item>
+        <item>Pусский язык</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_cs112">
+        <item>English</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_right">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Pусский язык</item>
+    </string-array>
+    <string-array name="system_voice_free_wake_up_duration">
+        <item>15 Detik</item>
+        <item>30 Detik</item>
+        <item>60 Detik</item>
+        <item>90 Detik</item>
+    </string-array>
+    <string-array name="system_voice_recognition_engine">
+        <item>Cantonese</item>
+        <item>Mandarin</item>
+    </string-array>
+    <string-array name="system_voice_speak_setting">
+        <item>Gadis lembut</item>
+        <item>Gadis imut</item>
+        <item>Pria periang</item>
+        <item>Pria bisnis</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="360.0dp" android:layout_height="202.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_wallpaper" android:layout_width="360.0dp" android:layout_height="202.0dp" android:scaleType="fitXY" app:actualImageScaleType="centerCrop" app:placeholderImageScaleType="centerInside" />
+    <View android:id="@id/view_edge" android:background="@drawable/wallpaper_edge_bg" android:visibility="gone" android:layout_width="360.0dp" android:layout_height="202.0dp" />
+</RelativeLayout>

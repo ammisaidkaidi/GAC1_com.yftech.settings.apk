@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="500.0dp" android:layout_height="360.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/soundStageBg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sound_stage_bg" />
+        <ImageView android:id="@id/selectedImg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_gravity="center" android:id="@id/hDash" android:background="@drawable/dash" android:layout_width="match_parent" android:layout_height="3.0dp" android:layerType="software" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/stageLayout" android:clickable="true" android:layout_width="340.0dp" android:layout_height="360.0dp">
+        <View android:layout_gravity="center" android:id="@id/vDash" android:background="@drawable/dash_v" android:layout_width="3.0dp" android:layout_height="match_parent" android:layerType="software" />
+        <ImageView android:layout_gravity="center" android:id="@id/stageThumb" android:background="@mipmap/regulation_soundsettings_btn_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

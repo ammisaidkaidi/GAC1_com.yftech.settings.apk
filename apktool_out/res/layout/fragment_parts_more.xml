@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llPartsMore" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/morePartsAtuoWiper" layout="@layout/item_switch_describe" />
+        <include android:id="@id/morePartsWiperMaintain" layout="@layout/item_button_describe" />
+        <include android:id="@id/morePartsEtc" layout="@layout/item_switch_describe" />
+        <include android:id="@id/morePartsWirelessCharging" layout="@layout/item_switch_describe" />
+        <include android:id="@id/steerWheelAsteriskKey" android:visibility="gone" layout="@layout/item_option" />
+        <include android:id="@id/phoneNumberSetting" layout="@layout/item_phone_number_setting" />
+        <include android:id="@id/morePartsConvenientCarSearch" layout="@layout/item_switch_describe" />
+    </LinearLayout>
+</ScrollView>

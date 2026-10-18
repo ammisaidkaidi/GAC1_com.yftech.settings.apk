@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llDisplayDash" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/dashBrightness" layout="@layout/item_seekbar_describe_dash" />
+        <include android:id="@id/dashLanguageSetting" layout="@layout/item_option" />
+        <include android:id="@id/dashVolume" layout="@layout/item_option" />
+        <include android:id="@id/dashCumulativeTravel" layout="@layout/item_button" />
+        <include android:id="@id/dashDistanceUnit" layout="@layout/item_option" />
+        <include android:id="@id/dashTemperatureUnit" layout="@layout/item_option" />
+        <include android:id="@id/dashPressureUnit" layout="@layout/item_option" />
+        <include android:id="@id/dashDefaultSetting" layout="@layout/item_button" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/system_tab_bar" android:background="@drawable/shape_item_tab_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tabBasic" style="@style/ItemTabLayoutTopStyle">
+            <ImageView android:id="@id/ivBasic" android:src="@mipmap/set_icon_basic" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvBasic" android:text="@string/system_basic_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineBasic" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabInfo" style="@style/ItemTabLayoutBottomStyle">
+            <ImageView android:id="@id/ivInfo" android:src="@mipmap/set_icon_system_information" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvInfo" android:text="@string/system_info_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineInfo" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabVehicleInfo" style="@style/ItemTabLayoutBottomStyle">
+            <ImageView android:id="@id/ivVehicleInfo" android:src="@mipmap/icon_car" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvVehicleInfo" android:text="@string/system_vehicle_info_title" style="@style/ItemTabTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/llContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="110.0dp" android:layout_marginEnd="46.0dp">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

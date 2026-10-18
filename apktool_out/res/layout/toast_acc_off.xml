@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_acc_off" android:background="#e6090808" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0sp" android:gravity="center" android:id="@id/acc_off_tip" android:background="@mipmap/toast_acc_off" android:layout_width="760.0dp" android:layout_height="168.0dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

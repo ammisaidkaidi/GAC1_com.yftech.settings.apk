@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00000" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00001" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00002" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00003" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00004" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00005" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00006" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00007" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00008" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00009" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00010" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00011" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00012" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00013" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00014" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00015" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00016" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00017" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00018" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00019" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00020" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00021" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00022" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00023" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00024" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00025" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00026" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00027" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00028" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00029" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00030" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00031" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00032" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00033" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00034" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00035" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00036" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00037" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00038" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00039" />
+    <item android:duration="48" android:drawable="@mipmap/a79_cluster_00040" />
+</animation-list>

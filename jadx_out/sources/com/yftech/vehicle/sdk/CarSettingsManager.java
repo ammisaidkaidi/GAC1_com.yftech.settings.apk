@@ -1,0 +1,1036 @@
+package com.yftech.vehicle.sdk;
+
+import com.yftech.vehicle.internal.BaseApiManager;
+import com.yftech.vehicle.internal.SignalReceiver;
+import com.yftech.vehicle.internal.adapter.IBaseApi;
+import com.yftech.vehicle.internal.adapter.ICarSettings;
+
+/* JADX INFO: loaded from: classes.dex */
+public class CarSettingsManager extends BaseApiManager implements ICarSettings {
+    private static final String TAG = "CarSettingsManager";
+    private static CarSettingsManager sMe;
+
+    public static abstract class CarSettingsListener {
+        @SignalReceiver(signalId = ICarSettings.ADASELK_STATE)
+        public void onADASELKStatusChanged(ICarSettings.ADASELKStatus aDASELKStatus) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.ADAS_RAEB_STATUS)
+        public void onADASRAEBStatusChanged(ICarSettings.ADASRAEBStatus aDASRAEBStatus) {
+        }
+
+        @SignalReceiver(signalId = 108)
+        public void onADASWarnTypeChanged(ICarSettings.ADASWarnType aDASWarnType) {
+        }
+
+        @SignalReceiver(signalId = 103)
+        public void onAEBOffEnableStateChanged(IBaseApi.EnableStateOp enableStateOp) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.AEB_FAULT_STATE)
+        public void onAEBOffFaultStateChanged(ICarSettings.FaultStatus faultStatus) {
+        }
+
+        @SignalReceiver(signalId = 109)
+        public void onAVASEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.AC_SMART_STATE)
+        public void onAcSmartChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = 112)
+        public void onAutoWiperModeChanged(ICarSettings.AutoWiperMode autoWiperMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.BSDMDOWSTATE_STATE)
+        public void onBSDMDowStateChanged(ICarSettings.BSDMDowState bSDMDowState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.BSDMLCA_STATE)
+        public void onBSDMLcaStateChanged(ICarSettings.BSDMLcaState bSDMLcaState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.BSDMRCTA_ASSIST_TYPE_STATE)
+        public void onBSDMRctaAssistTypeChanged(ICarSettings.BSDMRctaAssistType bSDMRctaAssistType) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.BSDMRCTA_STATE)
+        public void onBSDMRctaStateChanged(ICarSettings.BSDMRctaState bSDMRctaState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.BSDMRCWSTATE_STATE)
+        public void onBSDMRcwStateChanged(ICarSettings.BSDMRcwState bSDMRcwState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.COMFORT_PARK_STATE)
+        public void onComfortParkStateChanged(ICarSettings.ComfortParkState comfortParkState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.CRUISE_ASSIST_MODE)
+        public void onCruiseAssistModeChanged(ICarSettings.CruiseAssistMode cruiseAssistMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.DOOR_HANDLE_ELECTRIC_HIDE_STATE, valueToEnabledState = true)
+        public void onDoorHandleElectricHideStateChanged(boolean z) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.DRAG_MODE_STATE)
+        public void onDragModeChanged(ICarSettings.DragMode dragMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.DRIVER_EASY_ENTRY_EXIT_STATE, valueToEnabledState = true)
+        public void onDriverEasyEntryAndExitStateChanged(boolean z) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.ENG_WAVE_SWITCH_STATE)
+        public void onEMSEngWaveStatusChanged(ICarSettings.EMSEngWaveStatus eMSEngWaveStatus) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.EPB_SYSTEM_MSG_STATE)
+        public void onEPBSystemMsgChanged(ICarSettings.EPBSystemMsg ePBSystemMsg) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.EPB_SYSTEM_STATE)
+        public void onEPBSystemStateChanged(ICarSettings.EPBSystemState ePBSystemState) {
+        }
+
+        @SignalReceiver(signalId = 110)
+        public void onETCEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.EXHIBITION_HALL_MODE_STATUS)
+        public void onExhibitionHallModeChanged(ICarSettings.ExhibitionHallMode exhibitionHallMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.EXHIBITION_HALL_MODE_ENABLE, valueToEnabledState = true)
+        public void onExhibitionHallModeStateChanged(boolean z) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FCTA_CONFIG_STATUS)
+        public void onFCTAConfigChanged(ICarSettings.FCTAConfig fCTAConfig) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FCTA_SWITCH_STATUS)
+        public void onFCTASwitchChanged(ICarSettings.FCTASwitchStatus fCTASwitchStatus) {
+        }
+
+        @SignalReceiver(signalId = 101)
+        public void onFCWOffEnableStateChanged(IBaseApi.EnableStateOp enableStateOp) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FCW_FAULT_STATE)
+        public void onFCWOffFaultStateChanged(ICarSettings.FaultStatus faultStatus) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FCW_SWITCH_ENABLE_STATE)
+        public void onFCWSwitchEnableStateChanged(ICarSettings.FCWSwitchEnableState fCWSwitchEnableState) {
+        }
+
+        @SignalReceiver(signalId = 102)
+        public void onFCWWarningDistanceChanged(ICarSettings.FCWWarningDistance fCWWarningDistance) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FRONT_CAR_DISTANCE_DISPLAY)
+        public void onFrontCarDistanceDisplayEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FRONT_WIPER_AUTO_CONFIG_STATUS)
+        public void onFrontWiperAutoConfigChanged(ICarSettings.FrontWiperLevel frontWiperLevel) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FRONT_WIPER_INT_CONFIG_STATUS)
+        public void onFrontWiperIntConfigChanged(ICarSettings.FrontWiperLevel frontWiperLevel) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FRONT_WIPER_MODE_STATE)
+        public void onFrontWiperModeChanged(ICarSettings.FrontWiperMode frontWiperMode) {
+        }
+
+        @SignalReceiver(signalId = 111, valueToEnabledState = true)
+        public void onFrontWiperServicePositionStateChanged(boolean z) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.FRONT_WIPER_WASHER_STATE)
+        public void onFrontWiperWasherChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUD_ADAS_CRUISE_DIS_SHOW_STATUS)
+        public void onHUDADASCruiseDisChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUD_ADAS_TSR_DIS_SHOW_STATUS)
+        public void onHUDADASTSRDisChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUD_NAV__DIS_SHOW_STATUS)
+        public void onHUDNAVInfoChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUD_ANGLEST_STATE)
+        public void onHudAngleStChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUDBRIGHTNESSST_STATE)
+        public void onHudBrightnessStChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUDHEIGHTST_STATE)
+        public void onHudHeightStChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUD_MODE_STATE)
+        public void onHudModeChanged(ICarSettings.HudMode hudMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.HUDOFF_STATE)
+        public void onHudOffStateChanged(ICarSettings.HudOffState hudOffState) {
+        }
+
+        @SignalReceiver(signalId = 106)
+        public void onIAccEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.ILC_HWA_SWITCH_STATUS)
+        public void onILCHWASwitchChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.IMRCTRL_ERRO_STATUS)
+        public void onIMRCtrlErrorStatusChanged(ICarSettings.IMRCtrlErrorStatus iMRCtrlErrorStatus) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.IMRCTRL_STATUS)
+        public void onIMRCtrlStatusChanged(ICarSettings.IMRCtrlStatus iMRCtrlStatus) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.INTELLIGENT_AVOID)
+        public void onIntelligentAvoidEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.KEY_NOT_FORGET_WARNING)
+        public void onKeyNotforgetWarningEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = 100)
+        public void onLksModeChanged(ICarSettings.LksMode lksMode) {
+        }
+
+        @SignalReceiver(signalId = 99)
+        public void onLksStateChanged(ICarSettings.LksState lksState) {
+        }
+
+        @SignalReceiver(signalId = 107)
+        public void onOSRMAutoFoldEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.OSRM_ANGLE_CMD_STATE)
+        public void onOSRMRAngleCmdChanged(ICarSettings.OSRMRAngleCmd oSRMRAngleCmd) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.OSRMR_ANGLE_HORIZONTAL_FL)
+        public void onOSRMRAngleHorizontalFLChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.OSRMR_ANGLE_HORIZONTAL_FR)
+        public void onOSRMRAngleHorizontalFRChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.OSRMR_ANGLE_VERTICAL_FL)
+        public void onOSRMRAngleVerticalFLChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.OSRMR_ANGLE_VERTICAL_FR)
+        public void onOSRMRAngleVerticalFRChanged(int i) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.PARK_AUTO_UNLOCK_STATE)
+        public void onParkAutoUnlockChanged(ICarSettings.ParkAutoUnlockState parkAutoUnlockState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.POWER_KEEP_REMIND_CONF)
+        public void onPowerKeepRemindConfChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.POWER_KEEP_REMIND_STATE)
+        public void onPowerKeepRemindReqChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.POWER_KEEP_STATE)
+        public void onPowerKeepReqChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.POWER_KEEP_REQVD_STATE)
+        public void onPowerKeepReqVdChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.POWER_OFF_REQ_VD_STATE)
+        public void onPowerOffReqVdChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.RL_SPA_BUTTON_STATE)
+        public void onRLSPABUttonStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.SCM_RL_SPA_MODE_SEAT_STATE)
+        public void onRLSeatSpaModeStateChanged(ICarSettings.SeatSpaModeState seatSpaModeState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.RLSEATWELCOME)
+        public void onRLSeatWelcomeChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.RR_SPA_BUTTON_STATE)
+        public void onRRSPABUttonStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.SCM_RR_SPA_MODE_SEAT_STATE)
+        public void onRRSeatSpaModeStateChanged(ICarSettings.SeatSpaModeState seatSpaModeState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.RRSEATWELCOME)
+        public void onRRSeatWelcomeChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = 113)
+        public void onRainstormModeChanged(ICarSettings.RainstormMode rainstormMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.REAR_WIPER_MODE_STATE)
+        public void onRearWiperChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.REAR_WIPER_WASHER_STATE)
+        public void onRearWiperWasherChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.REARVIEW_MIRROR_CMD_REVERSE_STATE)
+        public void onRearviewMirrorCmdForReverseChanged(ICarSettings.RearviewMirrorCmdForReverse rearviewMirrorCmdForReverse) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.REARVIEW_MIRROR_STATE_L)
+        public void onRearviewMirrorStateLChanged(ICarSettings.RearviewMirrorState rearviewMirrorState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.REARVIEW_MIRROR_STATE_R)
+        public void onRearviewMirrorStateRChanged(ICarSettings.RearviewMirrorState rearviewMirrorState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.SCM_NAP_SETTING_SAVE_STATE)
+        public void onSeatNapModePositionStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.SCM_NAP_MODE_SEAT_STATE)
+        public void onSeatNapModeStateChanged(ICarSettings.SeatNapModeState seatNapModeState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.SEAT_NAP_POS_SAVE_REQ_STATE)
+        public void onSeatNapPosSaveReqChanged(ICarSettings.SeatNapPosSaveReq seatNapPosSaveReq) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.STP_ONBRK_TO_REL_PARKBRK_INDON_STATE)
+        public void onStpOnBrkToRelParkBrkIndOnStateChanged(ICarSettings.StpOnBrkToRelParkBrkIndOnState stpOnBrkToRelParkBrkIndOnState) {
+        }
+
+        @SignalReceiver(signalId = 105)
+        public void onTSRAudioWarningEnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = 104)
+        public void onTSREnableStateChanged(IBaseApi.EnableState enableState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.WCLCM_WORK_MODE_STATE)
+        public void onWCLCMWorkModeChanged(ICarSettings.WCLCMWorkMode wCLCMWorkMode) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.WCM_CTL_CHARGING_STATE_STATE)
+        public void onWCMCtlChargingStateChanged(ICarSettings.WCMCtlChargingState wCMCtlChargingState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.WCM_CTL_ERROR_STATE, valueToEnabledState = true)
+        public void onWCMCtlErrorStateStateChanged(boolean z) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.WCM_CTL_FAILURE_STATE_STATE)
+        public void onWCMCtlFailureStateChanged(ICarSettings.WCMCtlFailureState wCMCtlFailureState) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.WCM_CTL_PROMPT_STATE, valueToEnabledState = true)
+        public void onWCMCtlPromptStateStateChanged(boolean z) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.WCM_CTL_RESULT_STATE)
+        public void onWCMCtlResultChanged(ICarSettings.WCMCtlResult wCMCtlResult) {
+        }
+
+        @SignalReceiver(signalId = ICarSettings.PEPS_WARN_FORCE_POWER_OFF_STATUS)
+        public void onWarnForcePowerOFFChanged(IBaseApi.EnableState enableState) {
+        }
+    }
+
+    private CarSettingsManager() {
+    }
+
+    public static synchronized CarSettingsManager get() {
+        CarSettingsManager carSettingsManager;
+        if (sMe != null) {
+            carSettingsManager = sMe;
+        } else {
+            carSettingsManager = new CarSettingsManager();
+            sMe = carSettingsManager;
+        }
+        return carSettingsManager;
+    }
+
+    public ICarSettings.ADASELKStatus getADASELKStatus() {
+        return ICarSettings.ADASELKStatus.valueOf(getSignalValue(ICarSettings.ADASELK_STATE).intValue());
+    }
+
+    public ICarSettings.ADASRAEBStatus getADASRAEBStatus() {
+        return ICarSettings.ADASRAEBStatus.valueOf(getSignalValue(ICarSettings.ADAS_RAEB_STATUS).intValue());
+    }
+
+    public ICarSettings.ADASWarnType getADASWarnType() {
+        return ICarSettings.ADASWarnType.valueOf(getSignalValue(108).intValue());
+    }
+
+    public IBaseApi.EnableStateOp getAEBOffEnableState() {
+        return IBaseApi.EnableStateOp.valueOf(getSignalValue(103).intValue());
+    }
+
+    public ICarSettings.FaultStatus getAEBOffFaultState() {
+        return ICarSettings.FaultStatus.valueOf(getSignalValue(ICarSettings.AEB_FAULT_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getAVASEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(109).intValue());
+    }
+
+    public IBaseApi.EnableState getAcSmart() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.AC_SMART_STATE).intValue());
+    }
+
+    public ICarSettings.AutoWiperMode getAutoWiperMode() {
+        return ICarSettings.AutoWiperMode.valueOf(getSignalValue(112).intValue());
+    }
+
+    public ICarSettings.BSDMDowState getBSDMDowState() {
+        return ICarSettings.BSDMDowState.valueOf(getSignalValue(ICarSettings.BSDMDOWSTATE_STATE).intValue());
+    }
+
+    public ICarSettings.BSDMLcaState getBSDMLcaState() {
+        return ICarSettings.BSDMLcaState.valueOf(getSignalValue(ICarSettings.BSDMLCA_STATE).intValue());
+    }
+
+    public ICarSettings.BSDMRctaAssistType getBSDMRctaAssistType() {
+        return ICarSettings.BSDMRctaAssistType.valueOf(getSignalValue(ICarSettings.BSDMRCTA_ASSIST_TYPE_STATE).intValue());
+    }
+
+    public ICarSettings.BSDMRctaState getBSDMRctaState() {
+        return ICarSettings.BSDMRctaState.valueOf(getSignalValue(ICarSettings.BSDMRCTA_STATE).intValue());
+    }
+
+    public ICarSettings.BSDMRcwState getBSDMRcwState() {
+        return ICarSettings.BSDMRcwState.valueOf(getSignalValue(ICarSettings.BSDMRCWSTATE_STATE).intValue());
+    }
+
+    public ICarSettings.ComfortParkState getComfortParkState() {
+        return ICarSettings.ComfortParkState.valueOf(getSignalValue(ICarSettings.COMFORT_PARK_STATE).intValue());
+    }
+
+    public ICarSettings.CruiseAssistMode getCruiseAssistMode() {
+        return ICarSettings.CruiseAssistMode.valueOf(getSignalValue(ICarSettings.CRUISE_ASSIST_MODE).intValue());
+    }
+
+    public ICarSettings.DragMode getDragMode() {
+        return ICarSettings.DragMode.valueOf(getSignalValue(ICarSettings.DRAG_MODE_STATE).intValue());
+    }
+
+    public ICarSettings.EMSEngWaveStatus getEMSEngWaveStatus() {
+        return ICarSettings.EMSEngWaveStatus.valueOf(getSignalValue(ICarSettings.ENG_WAVE_SWITCH_STATE).intValue());
+    }
+
+    public ICarSettings.EPBSystemMsg getEPBSystemMsg() {
+        return ICarSettings.EPBSystemMsg.valueOf(getSignalValue(ICarSettings.EPB_SYSTEM_MSG_STATE).intValue());
+    }
+
+    public ICarSettings.EPBSystemState getEPBSystemState() {
+        return ICarSettings.EPBSystemState.valueOf(getSignalValue(ICarSettings.EPB_SYSTEM_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getETCEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(110).intValue());
+    }
+
+    public ICarSettings.ExhibitionHallMode getExhibitionHallMode() {
+        return ICarSettings.ExhibitionHallMode.valueOf(getSignalValue(ICarSettings.EXHIBITION_HALL_MODE_STATUS).intValue());
+    }
+
+    public ICarSettings.FCTAConfig getFCTAConfig() {
+        return ICarSettings.FCTAConfig.valueOf(getSignalValue(ICarSettings.FCTA_CONFIG_STATUS).intValue());
+    }
+
+    public ICarSettings.FCTASwitchStatus getFCTASwitch() {
+        return ICarSettings.FCTASwitchStatus.valueOf(getSignalValue(ICarSettings.FCTA_SWITCH_STATUS).intValue());
+    }
+
+    public IBaseApi.EnableStateOp getFCWOffEnableState() {
+        return IBaseApi.EnableStateOp.valueOf(getSignalValue(101).intValue());
+    }
+
+    public ICarSettings.FaultStatus getFCWOffFaultState() {
+        return ICarSettings.FaultStatus.valueOf(getSignalValue(ICarSettings.FCW_FAULT_STATE).intValue());
+    }
+
+    public ICarSettings.FCWSwitchEnableState getFCWSwitchEnableState() {
+        return ICarSettings.FCWSwitchEnableState.valueOf(getSignalValue(ICarSettings.FCW_SWITCH_ENABLE_STATE).intValue());
+    }
+
+    public ICarSettings.FCWWarningDistance getFCWWarningDistance() {
+        return ICarSettings.FCWWarningDistance.valueOf(getSignalValue(102).intValue());
+    }
+
+    public IBaseApi.EnableState getFrontCarDistanceDisplayEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.FRONT_CAR_DISTANCE_DISPLAY).intValue());
+    }
+
+    public ICarSettings.FrontWiperLevel getFrontWiperAutoConfig() {
+        return ICarSettings.FrontWiperLevel.valueOf(getSignalValue(ICarSettings.FRONT_WIPER_AUTO_CONFIG_STATUS).intValue());
+    }
+
+    public ICarSettings.FrontWiperLevel getFrontWiperIntConfig() {
+        return ICarSettings.FrontWiperLevel.valueOf(getSignalValue(ICarSettings.FRONT_WIPER_INT_CONFIG_STATUS).intValue());
+    }
+
+    public ICarSettings.FrontWiperMode getFrontWiperMode() {
+        return ICarSettings.FrontWiperMode.valueOf(getSignalValue(ICarSettings.FRONT_WIPER_MODE_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getFrontWiperWasher() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.FRONT_WIPER_WASHER_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getHUDADASCruiseDis() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.HUD_ADAS_CRUISE_DIS_SHOW_STATUS).intValue());
+    }
+
+    public IBaseApi.EnableState getHUDADASTSRDis() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.HUD_ADAS_TSR_DIS_SHOW_STATUS).intValue());
+    }
+
+    public IBaseApi.EnableState getHUDNAVInfo() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.HUD_NAV__DIS_SHOW_STATUS).intValue());
+    }
+
+    public int getHudAngleSt() {
+        return getSignalValue(ICarSettings.HUD_ANGLEST_STATE).intValue();
+    }
+
+    public int getHudBrightnessSt() {
+        return getSignalValue(ICarSettings.HUDBRIGHTNESSST_STATE).intValue();
+    }
+
+    public int getHudHeightSt() {
+        return getSignalValue(ICarSettings.HUDHEIGHTST_STATE).intValue();
+    }
+
+    public ICarSettings.HudMode getHudMode() {
+        return ICarSettings.HudMode.valueOf(getSignalValue(ICarSettings.HUD_MODE_STATE).intValue());
+    }
+
+    public ICarSettings.HudOffState getHudOffState() {
+        return ICarSettings.HudOffState.valueOf(getSignalValue(ICarSettings.HUDOFF_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getIAccEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(106).intValue());
+    }
+
+    public IBaseApi.EnableState getILCHWASwitch() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.ILC_HWA_SWITCH_STATUS).intValue());
+    }
+
+    public ICarSettings.IMRCtrlErrorStatus getIMRCtrlErrorStatus() {
+        return ICarSettings.IMRCtrlErrorStatus.valueOf(getSignalValue(ICarSettings.IMRCTRL_ERRO_STATUS).intValue());
+    }
+
+    public ICarSettings.IMRCtrlStatus getIMRCtrlStatus() {
+        return ICarSettings.IMRCtrlStatus.valueOf(getSignalValue(ICarSettings.IMRCTRL_STATUS).intValue());
+    }
+
+    public IBaseApi.EnableState getIntelligentAvoidEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.INTELLIGENT_AVOID).intValue());
+    }
+
+    public IBaseApi.EnableState getKeyNotforgetWarningEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.KEY_NOT_FORGET_WARNING).intValue());
+    }
+
+    public ICarSettings.LksMode getLksMode() {
+        return ICarSettings.LksMode.valueOf(getSignalValue(100).intValue());
+    }
+
+    public ICarSettings.LksState getLksState() {
+        return ICarSettings.LksState.valueOf(getSignalValue(99).intValue());
+    }
+
+    public IBaseApi.EnableState getOSRMAutoFoldEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(107).intValue());
+    }
+
+    public ICarSettings.OSRMRAngleCmd getOSRMRAngleCmd() {
+        return ICarSettings.OSRMRAngleCmd.valueOf(getSignalValue(ICarSettings.OSRM_ANGLE_CMD_STATE).intValue());
+    }
+
+    public int getOSRMRAngleHorizontalFL() {
+        return getSignalValue(ICarSettings.OSRMR_ANGLE_HORIZONTAL_FL).intValue();
+    }
+
+    public int getOSRMRAngleHorizontalFR() {
+        return getSignalValue(ICarSettings.OSRMR_ANGLE_HORIZONTAL_FR).intValue();
+    }
+
+    public int getOSRMRAngleVerticalFL() {
+        return getSignalValue(ICarSettings.OSRMR_ANGLE_VERTICAL_FL).intValue();
+    }
+
+    public int getOSRMRAngleVerticalFR() {
+        return getSignalValue(ICarSettings.OSRMR_ANGLE_VERTICAL_FR).intValue();
+    }
+
+    public ICarSettings.ParkAutoUnlockState getParkAutoUnlock() {
+        return ICarSettings.ParkAutoUnlockState.valueOf(getSignalValue(ICarSettings.PARK_AUTO_UNLOCK_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getPowerKeepRemindConf() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.POWER_KEEP_REMIND_CONF).intValue());
+    }
+
+    public IBaseApi.EnableState getPowerKeepRemindReq() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.POWER_KEEP_REMIND_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getPowerKeepReq() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.POWER_KEEP_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getPowerKeepReqVd() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.POWER_KEEP_REQVD_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getPowerOffReqVd() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.POWER_OFF_REQ_VD_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getRLSPABUttonState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.RL_SPA_BUTTON_STATE).intValue());
+    }
+
+    public ICarSettings.SeatSpaModeState getRLSeatSpaModeState() {
+        return ICarSettings.SeatSpaModeState.valueOf(getSignalValue(ICarSettings.SCM_RL_SPA_MODE_SEAT_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getRLSeatWelcome() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.RLSEATWELCOME).intValue());
+    }
+
+    public IBaseApi.EnableState getRRSPABUttonState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.RR_SPA_BUTTON_STATE).intValue());
+    }
+
+    public ICarSettings.SeatSpaModeState getRRSeatSpaModeState() {
+        return ICarSettings.SeatSpaModeState.valueOf(getSignalValue(ICarSettings.SCM_RR_SPA_MODE_SEAT_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getRRSeatWelcome() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.RRSEATWELCOME).intValue());
+    }
+
+    public ICarSettings.RainstormMode getRainstormMode() {
+        return ICarSettings.RainstormMode.valueOf(getSignalValue(113).intValue());
+    }
+
+    public IBaseApi.EnableState getRearWiper() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.REAR_WIPER_MODE_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getRearWiperWasher() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.REAR_WIPER_WASHER_STATE).intValue());
+    }
+
+    public ICarSettings.RearviewMirrorCmdForReverse getRearviewMirrorCmdForReverse() {
+        return ICarSettings.RearviewMirrorCmdForReverse.valueOf(getSignalValue(ICarSettings.REARVIEW_MIRROR_CMD_REVERSE_STATE).intValue());
+    }
+
+    public ICarSettings.RearviewMirrorState getRearviewMirrorStateL() {
+        return ICarSettings.RearviewMirrorState.valueOf(getSignalValue(ICarSettings.REARVIEW_MIRROR_STATE_L).intValue());
+    }
+
+    public ICarSettings.RearviewMirrorState getRearviewMirrorStateR() {
+        return ICarSettings.RearviewMirrorState.valueOf(getSignalValue(ICarSettings.REARVIEW_MIRROR_STATE_R).intValue());
+    }
+
+    public IBaseApi.EnableState getSeatNapModePositionState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.SCM_NAP_SETTING_SAVE_STATE).intValue());
+    }
+
+    public ICarSettings.SeatNapModeState getSeatNapModeState() {
+        return ICarSettings.SeatNapModeState.valueOf(getSignalValue(ICarSettings.SCM_NAP_MODE_SEAT_STATE).intValue());
+    }
+
+    public ICarSettings.SeatNapPosSaveReq getSeatNapPosSaveReq() {
+        return ICarSettings.SeatNapPosSaveReq.valueOf(getSignalValue(ICarSettings.SEAT_NAP_POS_SAVE_REQ_STATE).intValue());
+    }
+
+    public ICarSettings.StpOnBrkToRelParkBrkIndOnState getStpOnBrkToRelParkBrkIndOnState() {
+        return ICarSettings.StpOnBrkToRelParkBrkIndOnState.valueOf(getSignalValue(ICarSettings.STP_ONBRK_TO_REL_PARKBRK_INDON_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getTSRAudioWarningEnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(105).intValue());
+    }
+
+    public IBaseApi.EnableState getTSREnableState() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(104).intValue());
+    }
+
+    public ICarSettings.WCLCMWorkMode getWCLCMWorkMode() {
+        return ICarSettings.WCLCMWorkMode.valueOf(getSignalValue(ICarSettings.WCLCM_WORK_MODE_STATE).intValue());
+    }
+
+    public ICarSettings.WCMCtlChargingState getWCMCtlChargingState() {
+        return ICarSettings.WCMCtlChargingState.valueOf(getSignalValue(ICarSettings.WCM_CTL_CHARGING_STATE_STATE).intValue());
+    }
+
+    public ICarSettings.WCMCtlFailureState getWCMCtlFailureState() {
+        return ICarSettings.WCMCtlFailureState.valueOf(getSignalValue(ICarSettings.WCM_CTL_FAILURE_STATE_STATE).intValue());
+    }
+
+    public ICarSettings.WCMCtlResult getWCMCtlResult() {
+        return ICarSettings.WCMCtlResult.valueOf(getSignalValue(ICarSettings.WCM_CTL_RESULT_STATE).intValue());
+    }
+
+    public IBaseApi.EnableState getWarnForcePowerOFF() {
+        return IBaseApi.EnableState.valueOf(getSignalValue(ICarSettings.PEPS_WARN_FORCE_POWER_OFF_STATUS).intValue());
+    }
+
+    public boolean isDoorHandleElectricHideEnabled() {
+        return getSignalValue(ICarSettings.DOOR_HANDLE_ELECTRIC_HIDE_STATE).byteValue() == 1;
+    }
+
+    public boolean isDriverEasyEntryAndExitEnabled() {
+        return getSignalValue(ICarSettings.DRIVER_EASY_ENTRY_EXIT_STATE).byteValue() == 1;
+    }
+
+    public boolean isExhibitionHallModeEnabled() {
+        return getSignalValue(ICarSettings.EXHIBITION_HALL_MODE_ENABLE).byteValue() == 1;
+    }
+
+    public boolean isFrontWiperServicePositionEnabled() {
+        return getSignalValue(111).byteValue() == 1;
+    }
+
+    public boolean isWCMCtlErrorStateEnabled() {
+        return getSignalValue(ICarSettings.WCM_CTL_ERROR_STATE).byteValue() == 1;
+    }
+
+    public boolean isWCMCtlPromptStateEnabled() {
+        return getSignalValue(ICarSettings.WCM_CTL_PROMPT_STATE).byteValue() == 1;
+    }
+
+    public boolean performFrontWiperServicePositionButtonClick() {
+        return setSignalValue(44, (byte) 1);
+    }
+
+    public void registerListener(CarSettingsListener carSettingsListener) {
+        registerReceiver(carSettingsListener);
+    }
+
+    public boolean setADASELKEnabled(boolean z) {
+        return setSignalValue(ICarSettings.ADASELK_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setADASRAEBStatusEnabled(boolean z) {
+        return setSignalValue(ICarSettings.ADAS_RAEB_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setADASWarnType(ICarSettings.ADASWarnType aDASWarnType) {
+        return setSignalValue(41, aDASWarnType.value);
+    }
+
+    public boolean setAEBOffEnabled(boolean z) {
+        return setSignalValue(36, z ? (byte) 1 : (byte) 2);
+    }
+
+    public boolean setAVASEnabled(boolean z) {
+        return setSignalValue(42, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setAcSmartEnabled(boolean z) {
+        return setSignalValue(ICarSettings.AC_SMART_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setAutoWiperMode(ICarSettings.AutoWiperMode autoWiperMode) {
+        return setSignalValue(45, autoWiperMode.value);
+    }
+
+    public boolean setBSDMDowCtl(ICarSettings.BSDMDowCtl bSDMDowCtl) {
+        return setSignalValue(ICarSettings.BSDMDOWCTL_SETTING, bSDMDowCtl.value);
+    }
+
+    public boolean setBSDMLcaCtl(ICarSettings.BSDMLcaCtl bSDMLcaCtl) {
+        return setSignalValue(ICarSettings.BSDMLCACTL_SETTING, bSDMLcaCtl.value);
+    }
+
+    public boolean setBSDMRctaAssistType(ICarSettings.BSDMRctaAssistType bSDMRctaAssistType) {
+        return setSignalValue(ICarSettings.BSDMRCTA_ASSIST_TYPE_SETTING, bSDMRctaAssistType.value);
+    }
+
+    public boolean setBSDMRctaCtl(ICarSettings.BSDMRctaCtl bSDMRctaCtl) {
+        return setSignalValue(ICarSettings.BSDMRCTA_CTL_SETTING, bSDMRctaCtl.value);
+    }
+
+    public boolean setBSDMRcwCtl(ICarSettings.BSDMRcwCtl bSDMRcwCtl) {
+        return setSignalValue(ICarSettings.BSDMRCWCTL_SETTING, bSDMRcwCtl.value);
+    }
+
+    public boolean setComfortParkStateEnabled(boolean z) {
+        return setSignalValue(ICarSettings.COMFORT_PARK_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setCruiseAssistMode(ICarSettings.CruiseAssistMode cruiseAssistMode) {
+        return setSignalValue(ICarSettings.CRUISE_ASSIST_MODE_SETTING, cruiseAssistMode.value);
+    }
+
+    public boolean setDoorHandleElectricHideEnabled(boolean z) {
+        return setSignalValue(ICarSettings.DOOR_HANDLE_ELECTRIC_HIDE_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setDragModeEnabled(boolean z) {
+        return setSignalValue(ICarSettings.DRAG_MODE_SETTING, z ? (byte) 1 : (byte) 2);
+    }
+
+    public boolean setDriverEasyEntryAndExitEnabled(boolean z) {
+        return setSignalValue(ICarSettings.DRIVER_EASY_ENTRY_EXIT_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setEMSEngWaveEnabled(boolean z) {
+        return setSignalValue(ICarSettings.ENG_WAVE_SWITCH_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setEPBSystemSetState(ICarSettings.EPBSystemSetState ePBSystemSetState) {
+        return setSignalValue(ICarSettings.EPB_SYSTEM_SET_STATE_SETTING, ePBSystemSetState.value);
+    }
+
+    public boolean setETCEnabled(boolean z) {
+        return setSignalValue(43, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setExhibitionHallMode(ICarSettings.ExhibitionHallMode exhibitionHallMode) {
+        return setSignalValue(ICarSettings.EXHIBITION_HALL_MODE_SETTING, exhibitionHallMode.value);
+    }
+
+    public boolean setFCTAConfig(ICarSettings.FCTAConfig fCTAConfig) {
+        return setSignalValue(ICarSettings.FCTA_CONFIG_SETTING, fCTAConfig.value);
+    }
+
+    public boolean setFCTASwitchEnabled(boolean z) {
+        return setSignalValue(ICarSettings.FCTA_SWITCH_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setFCWOffEnabled(boolean z) {
+        return setSignalValue(34, z ? (byte) 1 : (byte) 2);
+    }
+
+    public boolean setFCWWarningDistance(ICarSettings.FCWWarningDistance fCWWarningDistance) {
+        return setSignalValue(35, fCWWarningDistance.value);
+    }
+
+    public boolean setFrontCarDistanceDisplayEnabled(boolean z) {
+        return setSignalValue(ICarSettings.FRONT_CAR_DISTANCE_DISPLAY_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setFrontWiperAutoConfig(ICarSettings.FrontWiperLevel frontWiperLevel) {
+        return setSignalValue(ICarSettings.FRONT_WIPER_AUTO_CONFIG_SETTING, frontWiperLevel.value);
+    }
+
+    public boolean setFrontWiperIntConfig(ICarSettings.FrontWiperLevel frontWiperLevel) {
+        return setSignalValue(ICarSettings.FRONT_WIPER_INT_CONFIG_SETTING, frontWiperLevel.value);
+    }
+
+    public boolean setFrontWiperMode(ICarSettings.FrontWiperMode frontWiperMode) {
+        return setSignalValue(ICarSettings.FRONT_WIPER_MODE_SETTING, frontWiperMode.value);
+    }
+
+    public boolean setFrontWiperWasherEnabled(boolean z) {
+        return setSignalValue(ICarSettings.FRONT_WIPER_WASHER_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setHUDADASCruiseDisEnabled(boolean z) {
+        return setSignalValue(ICarSettings.HUD_ADAS_CRUISE_DIS_SHOW_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setHUDADASTSRDisEnabled(boolean z) {
+        return setSignalValue(ICarSettings.HUD_ADAS_TSR_DIS_SHOW_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setHUDNAVInfoEnabled(boolean z) {
+        return setSignalValue(ICarSettings.HUD_NAV_DIS_SHOW_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setHudAngleSt(int i) {
+        return setSignalValue(ICarSettings.HUD_ANGLEST_SETTING, i);
+    }
+
+    public boolean setHudBrightnessSt(int i) {
+        return setSignalValue(ICarSettings.HUDBRIGHTNESSST_SETTING, i);
+    }
+
+    public boolean setHudHeightSt(int i) {
+        return setSignalValue(ICarSettings.HUDHEIGHTST_SETTING, i);
+    }
+
+    public boolean setHudMode(ICarSettings.HudMode hudMode) {
+        return setSignalValue(ICarSettings.HUD_MODE_SETTING, hudMode.value);
+    }
+
+    public boolean setHudOffState(ICarSettings.HudOffState hudOffState) {
+        return setSignalValue(ICarSettings.HUDOFF_SETTING, hudOffState.value);
+    }
+
+    public boolean setIAccEnabled(boolean z) {
+        return setSignalValue(39, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setILCHWASwitchEnabled(boolean z) {
+        return setSignalValue(ICarSettings.ILC_HWA_SWITCH_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setIMRCtrlStatus(ICarSettings.IMRCtrlStatus iMRCtrlStatus) {
+        return setSignalValue(ICarSettings.IMRCTRL_SETTING, iMRCtrlStatus.value);
+    }
+
+    public boolean setIMRCtrlStatusA60(ICarSettings.IMRCtrlStatus iMRCtrlStatus) {
+        return setSignalValue(ICarSettings.IMRCTRL_SETTING_A60, iMRCtrlStatus.value);
+    }
+
+    public boolean setIntelligentAvoidEnabled(boolean z) {
+        return setSignalValue(270, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setKeyNotforgetWarningEnabled(boolean z) {
+        return setSignalValue(ICarSettings.KEY_NOT_FORGET_WARNING_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setLdwLkaEnabled(boolean z) {
+        return setSignalValue(32, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setLksMode(ICarSettings.LksMode lksMode) {
+        return setSignalValue(33, lksMode.value);
+    }
+
+    public boolean setOSRMAutoFoldEnabled(boolean z) {
+        return setSignalValue(40, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setOSRMRAngleCmd(ICarSettings.OSRMRAngleCmd oSRMRAngleCmd) {
+        return setSignalValue(ICarSettings.OSRM_ANGLE_CMD_SETTING, oSRMRAngleCmd.value);
+    }
+
+    public boolean setOSRMRAngleSaveCmd(ICarSettings.OSRMRAngleSaveCmd oSRMRAngleSaveCmd) {
+        return setSignalValue(ICarSettings.OSRM_ANGLE_SAVE_CMD_SETTING, oSRMRAngleSaveCmd.value);
+    }
+
+    public boolean setParkAutoUnlock(ICarSettings.ParkAutoUnlockState parkAutoUnlockState) {
+        return setSignalValue(ICarSettings.PARK_AUTO_UNLOCK_SETTING, parkAutoUnlockState.value);
+    }
+
+    public boolean setPowerKeepRemindConfEnabled(boolean z) {
+        return setSignalValue(ICarSettings.POWER_KEEP_REMIND_CONF_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setPowerKeepReqEnabled(boolean z) {
+        return setSignalValue(ICarSettings.POWER_KEEP_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setPowerKeepReqVdSwitch(boolean z) {
+        return setSignalValue(ICarSettings.POWER_KEEP_REQVD_SETTING, z ? (byte) 1 : (byte) 0);
+    }
+
+    public boolean setPowerOffReqSwitch(boolean z) {
+        return setSignalValue(ICarSettings.POWER_OFF_REQ_SETTING, z ? (byte) 1 : (byte) 0);
+    }
+
+    public boolean setPowerOffReqVdSwitch(boolean z) {
+        return setSignalValue(ICarSettings.POWER_OFF_REQ_VD_SETTING, z ? (byte) 1 : (byte) 0);
+    }
+
+    public boolean setRLSeatWelcomeEnabled(boolean z) {
+        return setSignalValue(ICarSettings.RLSEATWELCOME_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setRRSeatWelcomeEnabled(boolean z) {
+        return setSignalValue(ICarSettings.RRSEATWELCOME_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setRainstormMode(ICarSettings.ShortcutMode shortcutMode) {
+        return setSignalValue(46, shortcutMode.value);
+    }
+
+    public boolean setRearWiperEnabled(boolean z) {
+        return setSignalValue(ICarSettings.REAR_WIPER_MODE_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setRearWiperWasherEnabled(boolean z) {
+        return setSignalValue(ICarSettings.REAR_WIPER_WASHER_SETTING, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setRearviewMirrorCmd(ICarSettings.RearviewMirrorCmd rearviewMirrorCmd) {
+        return setSignalValue(ICarSettings.REARVIEW_MIRROR_CMD, rearviewMirrorCmd.value);
+    }
+
+    public boolean setRearviewMirrorCmdForReverse(ICarSettings.RearviewMirrorCmdForReverse rearviewMirrorCmdForReverse) {
+        return setSignalValue(ICarSettings.REARVIEW_MIRROR_CMD_REVERSE_SETTING, rearviewMirrorCmdForReverse.value);
+    }
+
+    public boolean setRearviewMirrorCmdVdSwitch(boolean z) {
+        return setSignalValue(ICarSettings.REARVIEW_MIRROR_CMD_VD, z ? (byte) 1 : (byte) 0);
+    }
+
+    public boolean setRearviewMirrorSettingCmd(ICarSettings.RearviewMirrorSettingCmd rearviewMirrorSettingCmd) {
+        return setSignalValue(ICarSettings.REARVIEW_MIRROR_SETTING_CMD_SETTING, rearviewMirrorSettingCmd.value);
+    }
+
+    public boolean setSCMNapSettingSave(ICarSettings.NapSettingSave napSettingSave) {
+        return setSignalValue(ICarSettings.SCM_NAP_SETTING_SAVE, napSettingSave.value);
+    }
+
+    public boolean setSCMNapSettingSwitch(boolean z) {
+        return setSignalValue(ICarSettings.SCM_NAP_SETTING, z ? (byte) 1 : (byte) 0);
+    }
+
+    public boolean setSCMRearSeatShortcutmode(ICarSettings.RearSeatShortcutmode rearSeatShortcutmode) {
+        return setSignalValue(ICarSettings.SCM_REAR_NAP_SETTING, rearSeatShortcutmode.value);
+    }
+
+    public boolean setTSRAudioWarningEnabled(boolean z) {
+        return setSignalValue(38, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setTSREnabled(boolean z) {
+        return setSignalValue(37, z ? (byte) 2 : (byte) 1);
+    }
+
+    public boolean setWCLCMWorkModeCtl(ICarSettings.WCLCMWorkModeCtl wCLCMWorkModeCtl) {
+        return setSignalValue(ICarSettings.WCLCM_WORK_MODE_CTL_SETTING, wCLCMWorkModeCtl.value);
+    }
+
+    public boolean setWCMCtl(ICarSettings.WCMCtl wCMCtl) {
+        return setSignalValue(ICarSettings.WCM_CTL_SETTING, wCMCtl.value);
+    }
+
+    public void unregisterListener(CarSettingsListener carSettingsListener) {
+        unregisterReceiver(carSettingsListener);
+    }
+}

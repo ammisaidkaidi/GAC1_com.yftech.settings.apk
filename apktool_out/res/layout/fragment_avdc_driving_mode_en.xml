@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/avdc_driving_mode" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yftech.settings.widget.VideoView android:id="@id/driving_mode_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginTop="120.0dp" android:layout_marginStart="528.0dp">
+        <TextView android:id="@id/tv_avdc_driving_mode_title_power" android:text="@string/avdc_driving_mode_title_power" style="@style/AvdcDrivingModeTitleStyle" />
+        <TextView android:id="@id/avdc_driving_mode_value_power_tcu" style="@style/AvdcDrivingModeValueStyle" />
+        <View android:background="@drawable/avdc_driving_mode_line_bg" android:layout_width="3.0dp" android:layout_height="32.0dp" android:layout_marginStart="40.0dp" />
+        <TextView android:id="@id/tv_avdc_driving_mode_title_direction" android:text="@string/avdc_driving_mode_title_direction" android:layout_marginStart="40.0dp" style="@style/AvdcDrivingModeTitleStyle" />
+        <TextView android:id="@id/avdc_driving_mode_value_direction" style="@style/AvdcDrivingModeValueStyle" />
+        <View android:background="@drawable/avdc_driving_mode_line_bg" android:layout_width="3.0dp" android:layout_height="32.0dp" android:layout_marginStart="40.0dp" />
+        <TextView android:id="@id/tv_avdc_driving_mode_title_ESP_style" android:text="@string/avdc_driving_mode_title_ESP_style" android:layout_marginStart="40.5dp" style="@style/AvdcDrivingModeTitleStyle" />
+        <TextView android:id="@id/avdc_driving_mode_value_ESP_style" style="@style/AvdcDrivingModeValueStyle" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:background="@mipmap/avdc_driving_mode_select_tab_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="410.0dp" android:layout_alignParentEnd="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/avdc_driving_mode_btn_eco" android:background="@drawable/selector_avdc_btn_eco_bg" style="@style/AvdcDrivingModeButtonStyle" />
+            <Button android:id="@id/avdc_driving_mode_btn_comfort" android:background="@drawable/selector_avdc_btn_comfort_bg" style="@style/AvdcDrivingModeButtonStyle" />
+            <Button android:id="@id/avdc_driving_mode_btn_sport" android:background="@drawable/selector_avdc_btn_sport_bg" style="@style/AvdcDrivingModeButtonStyle" />
+            <Button android:id="@id/avdc_driving_mode_btn_sport_plus" android:background="@drawable/selector_avdc_btn_sport_plus_bg" style="@style/AvdcDrivingModeButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

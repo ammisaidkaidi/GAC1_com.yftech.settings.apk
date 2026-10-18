@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_auto_blowing_setting">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="active_safety_aid_lane_departure">
+        <item>Turn</item>
+        <item>Warning</item>
+        <item>Steering and Warning</item>
+    </string-array>
+    <string-array name="active_safety_aid_pre_collision_warning">
+        <item>Far</item>
+        <item>Middle</item>
+        <item>Near</item>
+    </string-array>
+    <string-array name="active_safety_aid_rear_through">
+        <item>Warning</item>
+        <item>Warning and Braking</item>
+    </string-array>
+    <string-array name="active_safety_item_status_alert">
+        <item>Fatigue</item>
+        <item>Distraction</item>
+        <item>Fatigue and distraction reminder</item>
+    </string-array>
+    <string-array name="avdc_ESP_style_a79">
+        <item>OFF</item>
+        <item>Sports</item>
+        <item>Webkit</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve">
+        <item>Soft</item>
+        <item>Standard</item>
+        <item>Quick</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve_a79">
+        <item>Soft</item>
+        <item>Normal</item>
+        <item>Quick</item>
+    </string-array>
+    <string-array name="avdc_drive_system_mode">
+        <item>Comfort</item>
+        <item>Energy saving</item>
+        <item>Sports</item>
+        <item>Super Sports</item>
+    </string-array>
+    <string-array name="avdc_energy_recovery_level">
+        <item>Close</item>
+        <item>First-class recycling</item>
+        <item>Secondary recycling</item>
+    </string-array>
+    <string-array name="avdc_shadow_driver">
+        <item>Close</item>
+        <item>Stable</item>
+        <item>Radical</item>
+        <item>Ice and Snow</item>
+        <item>Adaptive</item>
+    </string-array>
+    <string-array name="avdc_sound_waves">
+        <item>Close</item>
+        <item>Open</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a58">
+        <item>Light</item>
+        <item>Comfort</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a79">
+        <item>Light</item>
+        <item>Comfort</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a88">
+        <item>Light</item>
+        <item>Comfort</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="avdc_suspension_mode">
+        <item>Comfort</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="avdc_tcu_drive_mode">
+        <item>Comfort</item>
+        <item>Sports</item>
+        <item>Standard</item>
+        <item>High temperature</item>
+        <item>Standard</item>
+        <item>High temperature</item>
+        <item>cruise</item>
+        <item>Energy saving</item>
+        <item>Super Sports</item>
+    </string-array>
+    <string-array name="car_lock_back_door">
+        <item>Close</item>
+        <item>Only on</item>
+        <item>Beep on</item>
+    </string-array>
+    <string-array name="car_lock_remote_unlocking">
+        <item>All doors</item>
+        <item>Main driver door only</item>
+    </string-array>
+    <string-array name="car_lock_sliding_door_speed_setting">
+        <item>Elegance</item>
+        <item>Quick</item>
+    </string-array>
+    <string-array name="console_ac_show_time">
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>30s</item>
+    </string-array>
+    <string-array name="dash_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>español</item>
+        <item>العربية</item>
+        <item>русский язык</item>
+    </string-array>
+    <string-array name="dash_volume">
+        <item>Low</item>
+        <item>Middle</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="driving_aid_cruise_assist_mode">
+        <item>Adaptive cruise</item>
+        <item>Integrated Cruise</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_alarm_and_seat_vibration_and_alarm_and_seat_vibration">
+        <item>Warning sound</item>
+        <item>Seat vibration</item>
+        <item>Warning tone and seat vibration</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice">
+        <item>Sound effects</item>
+        <item>Vocal</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice_and_seat_vibration">
+        <item>Sound effects</item>
+        <item>Vocal</item>
+        <item>Seat vibration</item>
+    </string-array>
+    <string-array name="parts_steering_wheel_asterisk_1">
+        <item>One-click phone</item>
+        <item>One-click 360 panoramic view</item>
+        <item>One-click Home</item>
+        <item>One-click Play the collection of local radio</item>
+        <item>One-click SPORT+</item>
+        <item>One-click Parking</item>
+    </string-array>
+    <string-array name="sound_alarm_media">
+        <item>No change</item>
+        <item>Lower</item>
+        <item>Mute</item>
+    </string-array>
+    <string-array name="sound_best_effect_position">
+        <item>All Passengers</item>
+        <item>Driver Only</item>
+        <item>Close</item>
+    </string-array>
+    <string-array name="sound_by_volume_power">
+        <item>No change</item>
+        <item>Adaptive</item>
+    </string-array>
+    <string-array name="sound_effect_mode">
+        <item>Nature</item>
+        <item>Vocal</item>
+        <item>Mega Bass</item>
+        <item>Sleep</item>
+    </string-array>
+    <string-array name="sound_eq_effect_1">
+        <item>Classic</item>
+        <item>Pop</item>
+        <item>Jazz</item>
+    </string-array>
+    <string-array name="sound_eq_effect_2">
+        <item>Rock</item>
+        <item>Default</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="sound_key_tone">
+        <item>Modern</item>
+        <item>Retro</item>
+        <item>Close</item>
+    </string-array>
+    <string-array name="system_info_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>العربية</item>
+        <item>Pусский язык</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_cs112">
+        <item>English</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_right">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Pусский язык</item>
+    </string-array>
+    <string-array name="system_voice_free_wake_up_duration">
+        <item>15s</item>
+        <item>30s</item>
+        <item>60s</item>
+        <item>90s</item>
+    </string-array>
+    <string-array name="system_voice_recognition_engine">
+        <item>Cantonese</item>
+        <item>Mandarin</item>
+    </string-array>
+    <string-array name="system_voice_speak_setting">
+        <item>Quiet female voice</item>
+        <item>Cute girl female voice</item>
+        <item>Sunshine Boy</item>
+        <item>Business male voice</item>
+    </string-array>
+</resources>

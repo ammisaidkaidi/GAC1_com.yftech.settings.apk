@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/sound_tab_bar" android:background="@drawable/shape_item_tab_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tabSystem" style="@style/ItemTabLayoutTopStyle">
+            <ImageView android:id="@id/ivSystem" android:src="@mipmap/set_icon_system" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvConnect" android:text="@string/sound_system_title" style="@style/ItemTabTextStyle" />
+            <ImageView android:id="@id/icon_dts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:src="@mipmap/pic_dts" android:layout_marginStart="438.0dp" />
+            <View android:id="@id/lineSystem" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabInteraction" style="@style/ItemTabLayoutBottomStyle">
+            <ImageView android:id="@id/ivInteraction" android:src="@mipmap/set_icon_interaction" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvInteraction" android:text="@string/sound_interaction_title" style="@style/ItemTabTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/llContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="110.0dp" android:layout_marginEnd="46.0dp">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

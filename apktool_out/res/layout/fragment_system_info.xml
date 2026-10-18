@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llSystemInfo" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/systemInfoSystemVersion" layout="@layout/item_text" />
+        <include android:id="@id/systemInfoStorageSpace" android:visibility="gone" layout="@layout/item_storage_space" />
+        <include android:id="@id/systemInfoStorageSpaceClear" android:visibility="gone" layout="@layout/item_button" />
+        <include android:id="@id/systemInfoSerialNumber" android:visibility="gone" layout="@layout/item_text" />
+        <include android:id="@id/systemInfoHardwareVersion" android:visibility="gone" layout="@layout/item_text" />
+        <include android:id="@id/systemInfoSystemCurrentLanguage" android:visibility="gone" layout="@layout/item_text" />
+        <include android:id="@id/systemInfoSystemSupportLanguage" android:visibility="gone" layout="@layout/item_text" />
+        <include android:id="@id/systemInfoRestoreFactory" layout="@layout/item_button" />
+        <include android:id="@id/systemInfoManufacturer" android:visibility="gone" layout="@layout/item_text" />
+        <include android:id="@id/systemInfoVehicleModel" android:visibility="gone" layout="@layout/item_text" />
+    </LinearLayout>
+</ScrollView>

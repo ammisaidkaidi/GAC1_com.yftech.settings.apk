@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/aids_tab_bar" android:background="@drawable/shape_item_tab_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tabTip_memory" style="@style/ItemTabLayoutTopStyle">
+            <ImageView android:id="@id/ivTip_memory" android:src="@mipmap/set_icon_driving_memory" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvTip_memory" android:text="@string/tip_memory_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineTip_memory" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabSafe" style="@style/ItemTabLayoutCentreStyle">
+            <ImageView android:id="@id/ivSafe" android:src="@mipmap/set_icon_active_safety" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvSafe" android:text="@string/active_safety_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineSafe" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabDriving_aid" style="@style/ItemTabLayoutCentreStyle">
+            <ImageView android:id="@id/ivDriving_aid" android:src="@mipmap/set_icon_driving_promet" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvDriving_aid" android:text="@string/driving_aid_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineDriving_aid" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabParking" style="@style/ItemTabLayoutBottomStyle">
+            <ImageView android:id="@id/ivParking" android:src="@mipmap/set_icon_parking_aid" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvParking" android:text="@string/parking_aid_title" style="@style/ItemTabTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/llContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="110.0dp" android:layout_marginEnd="46.0dp">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

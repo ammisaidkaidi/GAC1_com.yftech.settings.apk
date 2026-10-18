@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="1560.0dp" android:layout_height="526.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:layout_width="1560.0dp" android:layout_height="526.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80.0dp">
+            <TextView android:textColor="@drawable/selector_tab_bar_btn_txt_wallpaper" android:id="@id/tv_title_default_wallpaper" android:text="@string/dialog_wallpaper_default" style="@style/TabTextStyle" />
+            <TextView android:id="@id/tv_title_usb1" android:text="@string/dialog_wallpaper_USB1" style="@style/TabTextStyle" />
+        </LinearLayout>
+        <View style="@style/divider_horizontal" />
+        <GridView android:id="@id/display_wallpaper_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:horizontalSpacing="17.0dp" android:verticalSpacing="17.0dp" android:numColumns="4" android:layout_marginStart="33.0dp" android:layout_marginEnd="33.0dp" />
+    </LinearLayout>
+    <View android:background="@drawable/shape_dialog_wallpaper_mask_bottom" android:layout_width="1556.0dp" android:layout_height="36.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

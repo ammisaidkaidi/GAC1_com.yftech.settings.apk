@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="857.0dp" android:layout_height="wrap_content" android:minHeight="98.0dp">
+        <TextView android:id="@id/tvTitle" android:maxWidth="@dimen/item_seekbar_title_max_width" android:layout_centerVertical="true" style="@style/ItemTitleStyle" />
+        <ImageView android:id="@id/ivIcon" android:layout_width="72.0dp" android:layout_height="98.0dp" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginStart="0.0dp" android:layout_toStartOf="@id/seekBarNumber" />
+        <com.yftech.settings.widget.SeekBarNumber android:id="@id/seekBarNumber" android:max="100" android:layout_centerVertical="true" android:layout_marginStart="0.0dp" android:layout_alignParentEnd="true" style="@style/ItemSeekBarNumberStyle" />
+    </RelativeLayout>
+    <View android:layout_width="857.0dp" style="@style/divider_horizontal" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llVoiceSettings" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/systemVoiceWakeUp" layout="@layout/item_switch_describe" />
+        <include android:id="@id/systemVoiceCustomWakeUpWord" layout="@layout/item_button_describe" />
+        <include android:id="@id/systemVoiceFreeWakeUpDuration" layout="@layout/item_option" />
+        <include android:id="@id/systemVoiceFreeWakeUpSetting" layout="@layout/item_switch" />
+        <include android:id="@id/systemVoiceRecognitionEngine" layout="@layout/item_option" />
+        <include android:id="@id/systemVoiceSpeakSetting" layout="@layout/item_option" />
+    </LinearLayout>
+</ScrollView>

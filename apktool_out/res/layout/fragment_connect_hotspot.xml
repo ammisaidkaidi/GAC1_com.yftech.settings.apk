@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/connect_layout" android:layout_width="857.0dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/bt_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/sw_hotspot" layout="@layout/item_bt_switch" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

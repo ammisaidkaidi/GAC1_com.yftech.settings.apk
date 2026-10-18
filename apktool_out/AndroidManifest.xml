@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:sharedUserId="android.uid.system" package="com.yftech.settings" platformBuildVersionCode="1" platformBuildVersionName="1.0">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="beantechs.permission.DATATRACK"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.yftech.permission.service.car"/>
+    <uses-permission android:name="com.yftech.permission.service.main.audio"/>
+    <uses-permission android:name="com.yftech.permission.test"/>
+    <uses-permission android:name="com.yftech.permission.service.main.screen"/>
+    <uses-permission android:name="com.yftech.permission.service.main.input"/>
+    <uses-permission android:name="com.yftech.permission.service.main.data"/>
+    <uses-permission android:name="com.yftech.permission.service.main.audio.effect"/>
+    <uses-permission android:name="com.yftech.permission.service.upgrade.upgrade"/>
+    <uses-permission android:name="com.yftech.permission.media.service"/>
+    <uses-permission android:name="com.yftech.permission.service.bluetooth"/>
+    <uses-permission android:name="com.yftech.permission.service.transfer.phonelink"/>
+    <uses-permission android:name="com.yftech.permission.service.vehicle.COMMON"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.yftech.settings.SettingsApp" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Settings2">
+        <uses-library android:name="com.yftech.vehicle.internal.adapter"/>
+        <uses-library android:name="com.yftech.vehicle.sdk"/>
+        <uses-library android:name="com.yftech.car.framework"/>
+        <activity android:launchMode="singleInstance" android:name="com.yftech.settings.SettingsActivity" android:theme="@style/Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="com.yftech.intent.action.start.settings"/>
+                <action android:name="com.yftech.intent.action.start.bt.setting"/>
+                <action android:name="com.yftech.intent.action.start.carplay.setting"/>
+                <action android:name="com.yftech.intent.action.start.hicar.setting"/>
+                <action android:name="com.yftech.intent.action.start.phonenumber.setting"/>
+                <action android:name="com.yftech.intent.action.start.steeringwheelcustombutton.setting"/>
+                <action android:name="com.yftech.intent.action.start.time.setting"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.yftech.settings.avdc.AvdcActivity">
+            <intent-filter>
+                <action android:name="com.yftech.intent.action.start.settings.avdc"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.yftech.settings.CarSettingsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.yftech.intent.action.ap.dialog.show"/>
+                <action android:name="com.yftech.intent.action.track.dialog.show"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/edit" android:focusable="true" android:layout_width="420.0dp" android:layout_height="wrap_content" android:cursorVisible="true" android:maxLines="1" android:maxLength="20" android:textCursorDrawable="@drawable/phone_number_setting_color_cursor"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_auto_blowing_setting">
+        <item>Низкий</item>
+        <item>Средний</item>
+        <item>Высокий</item>
+    </string-array>
+    <string-array name="active_safety_aid_lane_departure">
+        <item>Поворот</item>
+        <item>Предупреждение</item>
+        <item>Поворот и предупреждение</item>
+    </string-array>
+    <string-array name="active_safety_aid_pre_collision_warning">
+        <item>Дальняя</item>
+        <item>Средняя</item>
+        <item>Близкая</item>
+    </string-array>
+    <string-array name="active_safety_aid_rear_through">
+        <item>Предупреждение</item>
+        <item>Предупреждение и торможение</item>
+    </string-array>
+    <string-array name="active_safety_item_status_alert">
+        <item>Усталость</item>
+        <item>Рассеяние</item>
+        <item>Напоминание об усталости и рассеянии</item>
+    </string-array>
+    <string-array name="avdc_ESP_style_a79">
+        <item>OFF</item>
+        <item>Спорт</item>
+        <item>Скорость</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve">
+        <item>Мягкий</item>
+        <item>Стандартный</item>
+        <item>Быстрый</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve_a79">
+        <item>Мягкий</item>
+        <item>Нормальный</item>
+        <item>Быстрый</item>
+    </string-array>
+    <string-array name="avdc_drive_system_mode">
+        <item>Среднее</item>
+        <item>Энергосберегающий</item>
+        <item>Спортивный</item>
+        <item>Суперспортивный</item>
+    </string-array>
+    <string-array name="avdc_energy_recovery_level">
+        <item>Выкл.</item>
+        <item>Первичная рекуперация</item>
+        <item>Вторичная рекуперация</item>
+    </string-array>
+    <string-array name="avdc_shadow_driver">
+        <item>Выкл.</item>
+        <item>Умеренный</item>
+        <item>Радикальный</item>
+        <item>Снежно-ледовый</item>
+        <item>Самоадаптация</item>
+    </string-array>
+    <string-array name="avdc_sound_waves">
+        <item>Выкл.</item>
+        <item>Открыть</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a58">
+        <item>Среднее</item>
+        <item>Стандартный</item>
+        <item>Спортивный</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a79">
+        <item>Лёгкое</item>
+        <item>Среднее</item>
+        <item>Спорт</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a88">
+        <item>Лёгкое</item>
+        <item>Среднее</item>
+        <item>Спортивный</item>
+    </string-array>
+    <string-array name="avdc_suspension_mode">
+        <item>Среднее</item>
+        <item>Спортивный</item>
+    </string-array>
+    <string-array name="avdc_tcu_drive_mode">
+        <item>Среднее</item>
+        <item>Спорт</item>
+        <item>Стандарт</item>
+        <item>Высокая температура</item>
+        <item>Стандарт</item>
+        <item>Высокая температура</item>
+        <item>Круиз</item>
+        <item>Энергосбережение</item>
+        <item>Суперспорт</item>
+    </string-array>
+    <string-array name="car_lock_back_door">
+        <item>Выкл.</item>
+        <item>Включить без подачи звукового сигнала</item>
+        <item>Включить и подать звуковой сигнал</item>
+    </string-array>
+    <string-array name="car_lock_remote_unlocking">
+        <item>Все двери</item>
+        <item>Только дверь водителя</item>
+    </string-array>
+    <string-array name="car_lock_sliding_door_speed_setting">
+        <item>Грациозный</item>
+        <item>Быстрый</item>
+    </string-array>
+    <string-array name="console_ac_show_time">
+        <item>5 секунд</item>
+        <item>10 секунд</item>
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+    </string-array>
+    <string-array name="dash_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>español</item>
+        <item>العربية</item>
+        <item>русский язык</item>
+    </string-array>
+    <string-array name="dash_volume">
+        <item>Низкий</item>
+        <item>Средний</item>
+        <item>Высокий</item>
+    </string-array>
+    <string-array name="driving_aid_cruise_assist_mode">
+        <item>Адаптивный круиз-контроль</item>
+        <item>Интегрированный круиз-контроль</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_alarm_and_seat_vibration_and_alarm_and_seat_vibration">
+        <item>Предупреждающий звук</item>
+        <item>Вибрация сиденья</item>
+        <item>Предупреждающий звук и вибрация сиденья</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice">
+        <item>Звуковой эффект</item>
+        <item>Человеческий</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice_and_seat_vibration">
+        <item>Звуковой эффект</item>
+        <item>Человеческий</item>
+        <item>Вибрация сиденья</item>
+    </string-array>
+    <string-array name="parts_steering_wheel_asterisk_1">
+        <item>Звонок одним нажатием</item>
+        <item>Включение панорамы 360 одним нажатием</item>
+        <item>Вход в основной интерфейс одним нажатием</item>
+        <item>"Воспроизведение списка местных
+радиостанций одним нажатием"</item>
+        <item>Вход в режим SPORT+ одним нажатием</item>
+        <item>Припаркуй машину</item>
+    </string-array>
+    <string-array name="sound_alarm_media">
+        <item>Без изменений</item>
+        <item>Снижать</item>
+        <item>Без звука</item>
+    </string-array>
+    <string-array name="sound_best_effect_position">
+        <item>Режим для всех пассажиров</item>
+        <item>Режим для водителя</item>
+        <item>Выкл.</item>
+    </string-array>
+    <string-array name="sound_by_volume_power">
+        <item>Без изменений</item>
+        <item>Самоадаптация</item>
+    </string-array>
+    <string-array name="sound_effect_mode">
+        <item>Природа</item>
+        <item>Вокал</item>
+        <item>Сабвуфер</item>
+        <item>Отдых</item>
+    </string-array>
+    <string-array name="sound_eq_effect_1">
+        <item>Kлассика</item>
+        <item>Поп</item>
+        <item>Джаз</item>
+    </string-array>
+    <string-array name="sound_eq_effect_2">
+        <item>Рок</item>
+        <item>Центр</item>
+        <item>Своё</item>
+    </string-array>
+    <string-array name="sound_key_tone">
+        <item>Современный</item>
+        <item>Ретро</item>
+        <item>Выкл.</item>
+    </string-array>
+    <string-array name="system_info_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>العربية</item>
+        <item>Pусский язык</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_cs112">
+        <item>English</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_right">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Pусский язык</item>
+    </string-array>
+    <string-array name="system_voice_free_wake_up_duration">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>60 секунд</item>
+        <item>90 секунд</item>
+    </string-array>
+    <string-array name="system_voice_recognition_engine">
+        <item>Гуандунский диалект</item>
+        <item>Путунхуа</item>
+    </string-array>
+    <string-array name="system_voice_speak_setting">
+        <item>Тихий женский голос</item>
+        <item>Милый женский голос</item>
+        <item>Солнечный мужской голос</item>
+        <item>Деловой мужской голос</item>
+    </string-array>
+</resources>

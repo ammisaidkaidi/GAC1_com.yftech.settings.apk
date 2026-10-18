@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llSoundSystem" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/soundSystemMediaVolume" layout="@layout/item_seekbar" />
+        <include android:id="@id/soundSystemPhoneVolume" layout="@layout/item_seekbar" />
+        <include android:id="@id/soundSystemVoiceVolume" layout="@layout/item_seekbar" />
+        <include android:id="@id/soundSystemNaviVolume" layout="@layout/item_seekbar" />
+        <include android:id="@id/soundSystemBestEffectPosition" layout="@layout/item_option" />
+        <include android:id="@id/soundSystemDTSMode" android:visibility="gone" layout="@layout/item_dts_mode" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llEqEffect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/soundSystemEqEffect" layout="@layout/item_eq_type" />
+            <include android:id="@id/soundSystemEqEffectHigh" layout="@layout/item_seekbar_eq" />
+            <include android:id="@id/soundSystemEqEffectMiddle" layout="@layout/item_seekbar_eq" />
+            <include android:id="@id/soundSystemEqEffectLow" layout="@layout/item_seekbar_eq" />
+            <include android:id="@id/soundSystemSoundStage" layout="@layout/item_sound_stage" />
+        </LinearLayout>
+        <include android:id="@id/soundSystemVolumeBySpeed" layout="@layout/item_switch_describe" />
+        <include android:id="@id/soundSystemVolumeByPower" layout="@layout/item_option_describe" />
+        <include android:id="@id/soundSystemAidMediaVolume" layout="@layout/item_option_describe" />
+        <include android:id="@id/soundSystemUnlockingLockVolume" layout="@layout/item_switch" />
+    </LinearLayout>
+</ScrollView>

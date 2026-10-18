@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/parts_tab_bar" android:background="@drawable/shape_item_tab_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tabLight" style="@style/ItemTabLayoutTopStyle">
+            <ImageView android:id="@id/ivLight" android:src="@mipmap/set_icon_exterior_lighting" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvLight" android:text="@string/car_light_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineLight" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabLock" style="@style/ItemTabLayoutCentreStyle">
+            <ImageView android:id="@id/ivLock" android:src="@mipmap/set_icon_lock" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvLock" android:text="@string/car_lock_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineLock" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabRearview" style="@style/ItemTabLayoutCentreStyle">
+            <ImageView android:id="@id/ivRearview" android:src="@mipmap/set_icon_rearview_mirror" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvRearview" android:text="@string/rearview_mirror_title" style="@style/ItemTabTextStyle" />
+            <View android:id="@id/lineRearview" style="@style/ItemTabLineStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tabMore" style="@style/ItemTabLayoutBottomStyle">
+            <ImageView android:id="@id/ivMore" android:src="@mipmap/set_icon_other_accessories" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvMore" android:text="@string/parts_title" style="@style/ItemTabTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/llContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="110.0dp" android:layout_marginEnd="46.0dp">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

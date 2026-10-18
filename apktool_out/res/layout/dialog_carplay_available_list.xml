@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="26.0sp" android:gravity="center_vertical" android:id="@id/carplay_tv_available_header" android:layout_width="wrap_content" android:layout_height="80.0dp" android:text="@string/carplay_available_list_title" android:layout_marginStart="30.0dp" style="@style/ItemTitleStyle" />
+    <View android:layout_marginStart="30.0dp" style="@style/divider_horizontal" />
+    <com.yftech.settings.widget.ListViewForScrollView android:id="@id/carplay_lv_available" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="@null" />
+    <TextView android:textSize="26.0sp" android:gravity="center_vertical" android:id="@id/carplay_tv_available_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/item_one_row_height" android:text="@string/carplay_no_available_list" android:layout_marginStart="30.0dp" style="@style/ItemTitleStyle" />
+</LinearLayout>

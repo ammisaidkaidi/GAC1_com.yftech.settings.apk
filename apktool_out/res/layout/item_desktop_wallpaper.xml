@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="857.0dp" android:layout_height="296.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvTitle" android:layout_marginTop="27.0dp" style="@style/ItemTitleStyle" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="422.0dp" android:layout_height="176.0dp" android:layout_marginTop="24.0dp" android:layout_below="@id/tvTitle" android:layout_marginStart="426.0dp">
+        <com.yftech.settings.widget.RoundedImageView android:id="@id/iv_wallpaper" android:layout_width="422.0dp" android:layout_height="176.0dp" android:scaleType="fitXY" app:corner_radius="4.799988dp" />
+        <Button android:id="@id/btn_wallpaper" android:background="@drawable/selector_btn_wallpaper" android:layout_width="200.0dp" android:layout_height="72.0dp" android:text="@string/console_item_wallpaper_select" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:textAllCaps="false" style="@style/ItemButtonStyle" />
+    </RelativeLayout>
+    <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+</RelativeLayout>

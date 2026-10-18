@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ScrollStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/connect_layout" android:layout_width="857.0dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/carplay_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/carplay_layout_title" android:layout_width="match_parent" android:layout_height="@dimen/title_height">
+                <TextView android:textStyle="bold" android:id="@id/carplay_tv_title" android:text="@string/carplay_title" style="@style/TitleTextStyle" />
+                <Button android:textSize="28.0sp" android:id="@id/carplay_btn_add" android:background="@drawable/selector_btn_link_add_bg" android:text="@string/carplay_add_devices" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/ItemButtonStyle" />
+                <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+            </RelativeLayout>
+            <com.yftech.settings.widget.ListViewForScrollView android:id="@id/carplay_lv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/hicar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/hicar_layout_title" android:layout_width="match_parent" android:layout_height="@dimen/title_height">
+                <TextView android:textStyle="bold" android:id="@id/hicar_tv_title" android:text="@string/hicar_title" style="@style/TitleTextStyle" />
+                <Button android:textSize="28.0sp" android:id="@id/hicar_btn_add" android:background="@drawable/selector_btn_link_add_bg" android:text="@string/carplay_add_devices" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/ItemButtonStyle" />
+                <View android:layout_alignParentBottom="true" style="@style/divider_horizontal" />
+            </RelativeLayout>
+            <com.yftech.settings.widget.ListViewForScrollView android:id="@id/hicar_lv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

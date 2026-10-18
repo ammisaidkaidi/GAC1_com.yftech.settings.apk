@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_auto_blowing_setting">
+        <item>منخفض</item>
+        <item>متوسط</item>
+        <item>عالي</item>
+    </string-array>
+    <string-array name="active_safety_aid_lane_departure">
+        <item>التوجيه</item>
+        <item>التحذير</item>
+        <item>التوجيه والتحذير</item>
+    </string-array>
+    <string-array name="active_safety_aid_pre_collision_warning">
+        <item>بعيد</item>
+        <item>متوسط</item>
+        <item>قريب</item>
+    </string-array>
+    <string-array name="active_safety_aid_rear_through">
+        <item>تحذير</item>
+        <item>التحذير والفرملة</item>
+    </string-array>
+    <string-array name="active_safety_item_status_alert">
+        <item>إعياء</item>
+        <item>مشتت الذهن</item>
+        <item>تذكير بالتعب والإلهاء</item>
+    </string-array>
+    <string-array name="avdc_ESP_style_a79">
+        <item>OFF</item>
+        <item>رياضي</item>
+        <item>سريع</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve">
+        <item>ناعم</item>
+        <item>قياسي</item>
+        <item>سريع</item>
+    </string-array>
+    <string-array name="avdc_ac_comfort_curve_a79">
+        <item>لطيف</item>
+        <item>عادي</item>
+        <item>سريع</item>
+    </string-array>
+    <string-array name="avdc_drive_system_mode">
+        <item>مريح</item>
+        <item>موفر</item>
+        <item>رياضي</item>
+        <item>رياضي عالي</item>
+    </string-array>
+    <string-array name="avdc_energy_recovery_level">
+        <item>اغلاق</item>
+        <item>استعادة مستوى 1</item>
+        <item>استعادة مستوى 2</item>
+    </string-array>
+    <string-array name="avdc_shadow_driver">
+        <item>اغلاق</item>
+        <item>ثابت</item>
+        <item>فطري</item>
+        <item>الجليد</item>
+        <item>تكييف آلي</item>
+    </string-array>
+    <string-array name="avdc_sound_waves">
+        <item>اغلاق</item>
+        <item>فتح</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a58">
+        <item>مريح</item>
+        <item>قياسي</item>
+        <item>رياضي</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a79">
+        <item>خفيفة</item>
+        <item>مريح</item>
+        <item>رياضي</item>
+    </string-array>
+    <string-array name="avdc_steering_steering_hand_a88">
+        <item>الخفة</item>
+        <item>مريح</item>
+        <item>رياضي</item>
+    </string-array>
+    <string-array name="avdc_suspension_mode">
+        <item>مريح</item>
+        <item>الرياضة</item>
+    </string-array>
+    <string-array name="avdc_tcu_drive_mode">
+        <item>مريح</item>
+        <item>رياضي</item>
+        <item>قياسي</item>
+        <item>درجة حرارة عالية</item>
+        <item>قياسي</item>
+        <item>درجة حرارة عالية</item>
+        <item>رحلة السير</item>
+        <item>توفير الطاقة</item>
+        <item>رياضي عالي</item>
+    </string-array>
+    <string-array name="car_lock_back_door">
+        <item>قفل</item>
+        <item>تشغيل بدون صفارات الإنذار</item>
+        <item>تشغيل مع صفارات الإنذار</item>
+    </string-array>
+    <string-array name="car_lock_remote_unlocking">
+        <item>كل الابواب</item>
+        <item>باب السائق فقط</item>
+    </string-array>
+    <string-array name="car_lock_sliding_door_speed_setting">
+        <item>بلطف</item>
+        <item>سريع</item>
+    </string-array>
+    <string-array name="console_ac_show_time">
+        <item>5 ثوان</item>
+        <item>10 ثوانٍ</item>
+        <item>15 ثانية</item>
+        <item>30 ثانية</item>
+    </string-array>
+    <string-array name="dash_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>español</item>
+        <item>العربية</item>
+        <item>русский язык</item>
+    </string-array>
+    <string-array name="dash_volume">
+        <item>منخفض</item>
+        <item>متوسط</item>
+        <item>مرتفع</item>
+    </string-array>
+    <string-array name="driving_aid_cruise_assist_mode">
+        <item>التوجيه المناسب الالي</item>
+        <item>توجيه متكامل</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_alarm_and_seat_vibration_and_alarm_and_seat_vibration">
+        <item>صوت تحذير</item>
+        <item>اهتزاز المقعد</item>
+        <item>نغمة تحذير واهتزاز المقعد</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice">
+        <item>مؤثرات صوتية</item>
+        <item>صوت بشري</item>
+    </string-array>
+    <string-array name="driving_aid_tip_mode_sound_and_voice_and_seat_vibration">
+        <item>مؤثرات صوتية</item>
+        <item>صوت بشري</item>
+        <item>اهتزاز المقعد</item>
+    </string-array>
+    <string-array name="parts_steering_wheel_asterisk_1">
+        <item>الاتصال بنقرة واحدة</item>
+        <item>بانوراما 360 بنقرة واحدة</item>
+        <item>الواجهة الرئيسية بنقرة واحدة</item>
+        <item>تشغيل المحطات المحلية المفضلة بنقرة واحدة</item>
+        <item>بنقرة واحدة +SPORT</item>
+        <item>مفتاح واحد</item>
+    </string-array>
+    <string-array name="sound_alarm_media">
+        <item>عدم التغيير</item>
+        <item>منخفص</item>
+        <item>صوت هادئ</item>
+    </string-array>
+    <string-array name="sound_best_effect_position">
+        <item>وضع السيارة الكامل</item>
+        <item>وضع السائق الرئيسي</item>
+        <item>اغلاق</item>
+    </string-array>
+    <string-array name="sound_by_volume_power">
+        <item>عدم التغيير</item>
+        <item>التكييف الآلي</item>
+    </string-array>
+    <string-array name="sound_effect_mode">
+        <item>صوت طبيعي</item>
+        <item>محو الأصوات</item>
+        <item>سوبر باس</item>
+        <item>تمتع بالراحة</item>
+    </string-array>
+    <string-array name="sound_eq_effect_1">
+        <item>عادي</item>
+        <item>شائع</item>
+        <item>جاز</item>
+    </string-array>
+    <string-array name="sound_eq_effect_2">
+        <item>الروك</item>
+        <item>افتراضي</item>
+        <item>تخصيص</item>
+    </string-array>
+    <string-array name="sound_key_tone">
+        <item>عصري</item>
+        <item>كلاسيكي</item>
+        <item>اغلاق</item>
+    </string-array>
+    <string-array name="system_info_language_setting">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>العربية</item>
+        <item>Pусский язык</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_cs112">
+        <item>English</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="system_info_language_setting_right">
+        <item>中文</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Pусский язык</item>
+    </string-array>
+    <string-array name="system_voice_free_wake_up_duration">
+        <item>15 ثانية</item>
+        <item>30 ثانية</item>
+        <item>60 ثانية</item>
+        <item>90 ثانية</item>
+    </string-array>
+    <string-array name="system_voice_recognition_engine">
+        <item>الكانتونية</item>
+        <item>الماندرين</item>
+    </string-array>
+    <string-array name="system_voice_speak_setting">
+        <item>صوت أنثى هادئ</item>
+        <item>صوت أنثى لطيف</item>
+        <item>فتى الشمس</item>
+        <item>صوت رجل الاعمال</item>
+    </string-array>
+</resources>

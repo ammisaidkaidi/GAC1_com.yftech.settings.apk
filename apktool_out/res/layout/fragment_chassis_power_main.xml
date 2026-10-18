@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/chassis_power_tab_bar" android:background="@drawable/shape_item_tab_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tabChassis" style="@style/ItemTabLayoutOnlyStyle">
+            <ImageView android:id="@id/ivChassis" android:src="@mipmap/set_icon_setting" style="@style/ItemTabIconStyle" />
+            <TextView android:id="@id/tvChassis" android:text="@string/chassis_title" style="@style/ItemTabTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/llContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="110.0dp" android:layout_marginEnd="46.0dp">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

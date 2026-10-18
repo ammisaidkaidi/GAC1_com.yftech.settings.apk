@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yftech.settings.widget.ClipImageView android:id="@id/clip_image_view" android:layout_width="match_parent" android:layout_height="match_parent" app:civHeight="624" app:civMaskColor="#1a000000" app:civWidth="1280" />
+    <ImageView android:id="@id/wall_card_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="80.0px" android:src="@mipmap/wallpaper_card_bg" android:scaleType="matrix" android:layout_marginStart="188.0dp" />
+    <RelativeLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/status_bar_root" android:layout_width="1780.0dp" android:layout_height="60.0dp" android:layout_marginEnd="22.0dp">
+        <View android:background="@mipmap/rectangle" android:layout_width="120.0dp" android:layout_height="5.0dp" android:layout_marginTop="18.0dp" android:layout_marginEnd="812.0dp" android:layout_alignParentEnd="true" />
+        <RelativeLayout android:background="@mipmap/systemui_bg_dialog" android:layout_width="232.0dp" android:layout_height="60.0dp" android:layout_marginTop="10.0dp" android:layout_alignParentEnd="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="74.0px" android:layout_height="60.0px" android:layout_centerVertical="true" android:layout_toStartOf="@id/ivBtStatus">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ivCarPlayStatus" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/home_icon_carplay_sel" android:scaleType="centerInside" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ivCarLifeStatus" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/home_icon_carlife_sel" android:scaleType="centerInside" />
+            </LinearLayout>
+            <ImageView android:id="@id/ivBtStatus" android:layout_width="60.0px" android:layout_height="60.0px" android:src="@mipmap/buletooth_notconnected" android:scaleType="centerInside" android:layout_toStartOf="@id/tvTime" />
+            <TextView android:textSize="28.0px" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tvTime" android:paddingLeft="9.0px" android:paddingRight="9.0px" android:layout_width="wrap_content" android:layout_height="60.0px" android:text="10:45" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="left" android:background="@mipmap/dialog_wallpaper_nav_bg" android:layout_width="140.0dp" android:layout_height="match_parent" android:layoutDirection="ltr">
+        <ImageView android:id="@id/ivBack" android:background="@mipmap/back" android:layout_width="120.0px" android:layout_height="120.0px" android:layout_marginTop="80.0px" android:layout_centerHorizontal="true" android:scaleX="0.7" android:scaleY="0.7" />
+        <ImageView android:id="@id/ivHome" android:background="@mipmap/home" android:layout_width="120.0px" android:layout_height="120.0px" android:layout_marginTop="10.0px" android:layout_below="@id/ivBack" android:layout_centerHorizontal="true" android:scaleX="0.7" android:scaleY="0.7" />
+        <ImageView android:id="@id/ivMenu" android:layout_width="120.0px" android:layout_height="120.0px" android:layout_marginTop="10.0px" android:src="@mipmap/allmenu" android:layout_below="@id/ivHome" android:layout_centerHorizontal="true" android:scaleX="0.7" android:scaleY="0.7" />
+        <ImageView android:id="@id/ivDrive" android:background="@mipmap/menu_drive" android:layout_width="120.0px" android:layout_height="120.0px" android:layout_marginTop="10.0px" android:layout_below="@id/ivMenu" android:layout_centerHorizontal="true" android:scaleX="0.7" android:scaleY="0.7" />
+        <RelativeLayout android:id="@id/rlAirControl" android:layout_width="match_parent" android:layout_height="130.0px" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/ivModena" android:layout_width="48.0px" android:layout_height="44.0px" android:layout_marginTop="24.0px" android:src="@mipmap/modec" android:layout_marginStart="17.0px" />
+            <ImageView android:id="@id/ivWind" android:layout_width="29.0px" android:layout_height="35.0px" android:layout_marginLeft="5.0px" android:layout_marginTop="28.0px" android:src="@mipmap/wind_icon" android:layout_toRightOf="@id/ivModena" />
+            <ImageView android:id="@id/ivWindValue" android:layout_width="17.0px" android:layout_height="35.0px" android:layout_marginLeft="5.0px" android:src="@mipmap/wind_nub0" android:layout_toRightOf="@id/ivWind" android:layout_alignBottom="@id/ivWind" />
+            <TextView android:textSize="39.0px" android:textColor="#fff" android:gravity="center" android:id="@id/tvTmp" android:visibility="gone" android:layout_width="76.0px" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginBottom="13.0px" android:text="27.5" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ivAirOff" android:layout_width="113.0px" android:layout_height="48.0px" android:layout_marginLeft="15.0px" android:layout_marginBottom="14.0px" android:src="@mipmap/off" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="#4d000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_gravity="end|bottom" android:layout_width="700.0px" android:layout_height="match_parent" android:layout_marginBottom="52.0px" android:layout_marginEnd="118.0px">
+        <TextView android:textSize="24.0px" android:textColor="#ffffff" android:gravity="center" android:id="@id/btn_confirm" android:background="@drawable/wall_paper_set_bg_selector" android:layout_width="200.0px" android:layout_height="62.0px" android:text="@string/dialog_btn_sure" android:layout_alignParentBottom="true" android:layout_marginStart="100.0px" />
+        <TextView android:textSize="24.0px" android:textColor="#ffffff" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/wall_paper_set_bg_selector" android:layout_width="200.0px" android:layout_height="62.0px" android:text="@string/dialog_button_cancel" android:layout_alignParentBottom="true" android:layout_marginStart="400.0px" />
+        <TextView android:textSize="30.0px" android:textColor="@color/color_title_default" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="92.0px" android:text="@string/dialog_move_scale" android:drawablePadding="24.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:drawableStart="@mipmap/icon_resize" />
+    </RelativeLayout>
+</FrameLayout>
